@@ -19,7 +19,7 @@ baseURL = "https://jackstreicher.github.io/PrgAnd3D"
     author = "Marius Sauter"
     title = "Title"
     # description = "..."
-    authorimage = "../programming/witcher_logo.png"
+    authorimage = "//programming/witcher_logo.png"
     dateformat = "Jan 2, 2006"
    
 
