@@ -17,6 +17,7 @@ theme = "hyde-hyde"
     # description = "..."
     authorimage = "/img/witcher_logo.png"
     dateformat = "Jan 2, 2006"
+    publishDir = "docs"
 
     # sidebar, copyright & license
     copyright = "htr3n"
