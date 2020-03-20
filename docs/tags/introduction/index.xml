@@ -3,40 +3,40 @@
   <channel>
     <title>Introduction on PRG &amp;
 3D</title>
-    <link>/tags/introduction/</link>
+    <link>https://jackstreicher.github.io/PrgAnd3D/tags/introduction/</link>
     <description>Recent content in Introduction on PRG &amp;
 3D</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jackstreicher.github.io/PrgAnd3D/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>01. Einführung in Blender</title>
-      <link>/3d/01einfuehrung_blender3d/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/3d/01einfuehrung_blender3d/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3d/01einfuehrung_blender3d/</guid>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/3d/01einfuehrung_blender3d/</guid>
       <description>Move static content to static Create your Hugo configuration file Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the Hugo configuration documentation for details.
 Set your configuration publish folder to _site The default is for Jekyll to publish to _site and for Hugo to publish to public. If, like me, you have _site mapped to a git submodule on the gh-pages branch, you&amp;rsquo;ll want to do one of two alternatives:</description>
     </item>
     
     <item>
       <title>01. Objektorientierte Programmierung</title>
-      <link>/programming/01oop-einfuehrung/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/programming/01oop-einfuehrung/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/programming/01oop-einfuehrung/</guid>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/01oop-einfuehrung/</guid>
       <description>01 Sprachgrundlagen C#, auch C#.NET (Visual Studio) ist eine Weiterentwicklung der Programmiersprache C++, letztere wird u.a. in Game Engines, wie der Unreal Engine verwendet. Bei C# handelt es sich um eine objektorientierte Programmiersprache. Die Raute, die dem C folgt symbolisiert vier, sich überlappende, Plus-Zeichen (C++++). Die Programmiersprache wurde von Microsoft entwickelt und erschien erstmals mit Visual Studio .NET 2002.
 Für Nutzer der Windows Plattform stellt(e) sie eine alternative zu Java dar.</description>
     </item>
     
     <item>
       <title>02. Grundlagen der OOP</title>
-      <link>/programming/02grundlagen_der_oop/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/programming/02grundlagen_der_oop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/programming/02grundlagen_der_oop/</guid>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/02grundlagen_der_oop/</guid>
       <description>01 Klassen, Felder &amp;amp; Methoden Die beste Definition für eine Klasse stammt bereits aus der C#-Dokumentation von Microsoft:
  Klassen sind die grundlegendsten der C#-Typen. Eine Klasse ist eine Datenstruktur, die einen Zustand (Felder) und Aktionen (Methoden und andere Funktionsmember) in einer einzigen Einheit kombiniert. Eine Klasse stellt eine Definition für dynamisch erstellte Instanzen der Klasse, auch bekannt als Objekte bereit. Klassen unterstützen Vererbung und Polymorphie. Dies sind Mechanismen, durch die abgeleitete Klassen erweitert und Basisklassen spezialisiert werden können.</description>
     </item>

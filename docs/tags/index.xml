@@ -3,38 +3,38 @@
   <channel>
     <title>Tags on PRG &amp;
 3D</title>
-    <link>/tags/</link>
+    <link>https://jackstreicher.github.io/PrgAnd3D/tags/</link>
     <description>Recent content in Tags on PRG &amp;
 3D</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jackstreicher.github.io/PrgAnd3D/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>C#</title>
-      <link>/tags/c#/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/tags/c#/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/c#/</guid>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/tags/c#/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Introduction</title>
-      <link>/tags/introduction/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/tags/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/introduction/</guid>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/tags/introduction/</guid>
       <description></description>
     </item>
     
     <item>
       <title>OOP</title>
-      <link>/tags/oop/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/tags/oop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/oop/</guid>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/tags/oop/</guid>
       <description></description>
     </item>
     

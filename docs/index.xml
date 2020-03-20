@@ -3,60 +3,60 @@
   <channel>
     <title>PRG &amp;
 3D</title>
-    <link>/</link>
+    <link>https://jackstreicher.github.io/PrgAnd3D/</link>
     <description>Recent content on PRG &amp;
 3D</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jackstreicher.github.io/PrgAnd3D/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>01. Einführung in Blender</title>
-      <link>/3d/01einfuehrung_blender3d/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/3d/01einfuehrung_blender3d/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3d/01einfuehrung_blender3d/</guid>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/3d/01einfuehrung_blender3d/</guid>
       <description>Move static content to static Create your Hugo configuration file Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the Hugo configuration documentation for details.
 Set your configuration publish folder to _site The default is for Jekyll to publish to _site and for Hugo to publish to public. If, like me, you have _site mapped to a git submodule on the gh-pages branch, you&amp;rsquo;ll want to do one of two alternatives:</description>
     </item>
     
     <item>
       <title>01. Objektorientierte Programmierung</title>
-      <link>/programming/01oop-einfuehrung/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/programming/01oop-einfuehrung/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/programming/01oop-einfuehrung/</guid>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/01oop-einfuehrung/</guid>
       <description>01 Sprachgrundlagen C#, auch C#.NET (Visual Studio) ist eine Weiterentwicklung der Programmiersprache C++, letztere wird u.a. in Game Engines, wie der Unreal Engine verwendet. Bei C# handelt es sich um eine objektorientierte Programmiersprache. Die Raute, die dem C folgt symbolisiert vier, sich überlappende, Plus-Zeichen (C++++). Die Programmiersprache wurde von Microsoft entwickelt und erschien erstmals mit Visual Studio .NET 2002.
 Für Nutzer der Windows Plattform stellt(e) sie eine alternative zu Java dar.</description>
     </item>
     
     <item>
       <title>02. Grundlagen der OOP</title>
-      <link>/programming/02grundlagen_der_oop/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/programming/02grundlagen_der_oop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/programming/02grundlagen_der_oop/</guid>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/02grundlagen_der_oop/</guid>
       <description>01 Klassen, Felder &amp;amp; Methoden Die beste Definition für eine Klasse stammt bereits aus der C#-Dokumentation von Microsoft:
  Klassen sind die grundlegendsten der C#-Typen. Eine Klasse ist eine Datenstruktur, die einen Zustand (Felder) und Aktionen (Methoden und andere Funktionsmember) in einer einzigen Einheit kombiniert. Eine Klasse stellt eine Definition für dynamisch erstellte Instanzen der Klasse, auch bekannt als Objekte bereit. Klassen unterstützen Vererbung und Polymorphie. Dies sind Mechanismen, durch die abgeleitete Klassen erweitert und Basisklassen spezialisiert werden können.</description>
     </item>
     
     <item>
       <title>03. Kapselung, Konstruktoren und Namesnräume</title>
-      <link>/programming/03kapselung_konstruktoren_namensraeume/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/programming/03kapselung_konstruktoren_namensraeume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/programming/03kapselung_konstruktoren_namensraeume/</guid>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/03kapselung_konstruktoren_namensraeume/</guid>
       <description>01 Kapselung und Eigenschaften Wenn ein Objekt entworfen wird, muss überlegt werden, welche Member des Objekts für den Benutzer sichtbar (public) oder verborgen (private || protected) sind. Eine Kapselung besteht dann, wenn ein Member für den Benutzer nicht sichtbar ist.
 Die Gründe für eine Kapselung sind, dass der Benutzer z.B. als privat deklarierte Member des Objekts nicht ändern kann, wodurch weniger Fehler durch den Benutzer entstehen können. Fehler wären in diesem Fall die Zerstörung des Codes, durch Fehleingaben oder durch Manipulation von Membern, die nicht manipuliert werden sollten.</description>
     </item>
     
     <item>
       <title>04. Vererbung</title>
-      <link>/programming/04vererbung/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/programming/04vererbung/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/programming/04vererbung/</guid>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/04vererbung/</guid>
       <description>01 Grundlagen der Vererbung Für die OOP ist Vererbung ein sehr wichtiges Konzept. Die Vererbung ermöglicht es, dass child Klassen von parent Klassen Methoden und Eigenschaften erben und erweitern können.
 Auf Member mit dem Schlüsselwort protected können anderen Klassen nicht zugreifen, child Klassen jedoch haben Zugriff, insofern diese protected Member der parent Klasse angehören.
 Auf private Member können von child Klassen, die in der parent Klasse eingebettet sind, zugegriffen werden. Durch das Schlüsselwort base kann auf Member der parent Instanz zugegriffen werden.</description>
@@ -64,76 +64,76 @@ Auf private Member können von child Klassen, die in der parent Klasse eingebett
     
     <item>
       <title>05. Polymorphismus</title>
-      <link>/programming/05polymorphismus/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/programming/05polymorphismus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/programming/05polymorphismus/</guid>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/05polymorphismus/</guid>
       <description>01 Polymorphie in der Vererbung Polymophismus bedeutet Vielgestaltigkeit. compile time Polymorphie haben wir bereits unter dem Namen Method Overload kennengelernt. Im folgenden Beispiel gehen wir näher auf die run time Polymorphie ein.
 Wir arbeiten weiter an unserem Monster Beispiel und wenden Polymorphie direkt an, indem wir eine Methode der parent Klasse überschreiben (override). Als nächstes verändern wir eine Methode der parent Klasse. Um dies zu tun muss vor die Methode, in die Reihe der Schlüsselwörter das wort virtual geschrieben werden.</description>
     </item>
     
     <item>
       <title>06. Interfaces a.k.a. Schnittstellen</title>
-      <link>/programming/06interfaces/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/programming/06interfaces/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/programming/06interfaces/</guid>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/06interfaces/</guid>
       <description>01 Einführung in Schnittstellen Interfaces funktionieren im Grunde wie abstarkte Klassen. Man kann sie auch als Vertrag verstehen, der besagt: Jede Klasse die das Interface implementiert, muss alle Properties und Methoden des Interfaces implementieren. Schnittstelle oder Vererbung? Schnittstellen werden in C# häufig dazu genutzt Mehrfachvererbung (die in C# nicht möglich ist) darzustellen. Für die Entscheidung, ob ein Interface oder eine Klasse (Base Klasse) genutzt werden sollte, lässt sich generell sagen: Wenn die Baseklasse über keine implementierung verfügt und nur abstrakt ist, kann man i.</description>
     </item>
     
     <item>
       <title>07. Komplexe Datentypen</title>
-      <link>/programming/07komplexe_datentypen/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/programming/07komplexe_datentypen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/programming/07komplexe_datentypen/</guid>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/07komplexe_datentypen/</guid>
       <description>01 Ein-, merhdimensionale &amp;amp; verzweigte Arrays Ein Array ist eine Datenstruktur, in der Variablen des gleichen Typs gespeichert werden können. Arrays eignen sich hervorragend um mit einer feststehenden Anzahl von Objekten des gleichen Typs zu arbeiten. Vorstellen kann man sich ein eindimensionales Array als einen Schrank mit Schubladen, bei dem jede Schublade eine Nummer trägt (0-X). Sobald der Schrank erst ein Mal geschreinert wurde, kann dessen Größe und nicht ohne weiteres verändert werden!</description>
     </item>
     
     <item>
       <title>08. Fehlerbehandlung und Suche</title>
-      <link>/programming/08fehlerbehandlung_und_suche/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/programming/08fehlerbehandlung_und_suche/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/programming/08fehlerbehandlung_und_suche/</guid>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/08fehlerbehandlung_und_suche/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>09. System-, Datei- und Laufwerkzugriffe</title>
-      <link>/programming/09system_datei_laufwerkzugriffe/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/programming/09system_datei_laufwerkzugriffe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/programming/09system_datei_laufwerkzugriffe/</guid>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/09system_datei_laufwerkzugriffe/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>10. Mathematische Objekte und Berechnungen</title>
-      <link>/programming/10mathematisch_objekte_und_berechnungen/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/programming/10mathematisch_objekte_und_berechnungen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/programming/10mathematisch_objekte_und_berechnungen/</guid>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/10mathematisch_objekte_und_berechnungen/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>11. Unity: 
 Perspektiven-Einstellungen View-, World- und Projektionmatrix</title>
-      <link>/programming/11unity3d_perspektiven-einstellungen/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/programming/11unity3d_perspektiven-einstellungen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/programming/11unity3d_perspektiven-einstellungen/</guid>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/11unity3d_perspektiven-einstellungen/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>12. Unity: 
 Texturierung</title>
-      <link>/programming/12unity3dtexturierung/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/programming/12unity3dtexturierung/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/programming/12unity3dtexturierung/</guid>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/12unity3dtexturierung/</guid>
       <description> </description>
     </item>
     
