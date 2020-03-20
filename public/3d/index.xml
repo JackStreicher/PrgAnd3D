@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blender Lessons on PRG &amp;
+3D</title>
+    <link>/3d/</link>
+    <description>Recent content in Blender Lessons on PRG &amp;
+3D</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="/3d/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>01. Einführung in Blender</title>
+      <link>/3d/01einfuehrung_blender3d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3d/01einfuehrung_blender3d/</guid>
+      <description>Move static content to static Create your Hugo configuration file Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the Hugo configuration documentation for details.
+Set your configuration publish folder to _site The default is for Jekyll to publish to _site and for Hugo to publish to public. If, like me, you have _site mapped to a git submodule on the gh-pages branch, you&amp;rsquo;ll want to do one of two alternatives:</description>
+    </item>
+    
+  </channel>
+</rss>

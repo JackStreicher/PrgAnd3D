@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.66.0" />
+
+    
+    
+    
+
+<title>07. Komplexe Datentypen • PRG &amp;
+3D</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="07. Komplexe Datentypen"/>
+<meta name="twitter:description" content="Eine Einführung in OOP"/>
+
+<meta property="og:title" content="07. Komplexe Datentypen" />
+<meta property="og:description" content="Eine Einführung in OOP" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/programming/07komplexe_datentypen/" />
+<meta property="og:site_name" content="Title" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/scss/hyde-hyde.194a555fcad66b37e0f01e29e42f16ac6cd710a49793126dc33aeb9d88ceec95.css" integrity="sha256-GUpVX8rWazfg8B4p5C8WrGzXEKSXkxJtwzrrnYjO7JU=">
+
+
+<link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-3D">
+      <span class="site__title">
+        <a href="">PRG &amp;
+3D</a>
+      </span>
+      
+        
+        
+        
+        <div class="author-image">
+          <img src="img/witcher_logo.png" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
+      
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">PRG &amp;
+3D</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/3d/">
+						<span>3D Lessons</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/programming/">
+						<span>C# Programming</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/assets/">
+						<span>Assets</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2020 htr3n
+  
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+  
+</div>
+
+
+<div class="builtwith">
+Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+</div>
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>07. Komplexe Datentypen</h1>
+    
+    
+<div class="post__meta">
+    
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="/categories/c">C#</a>
+              •
+          
+              <a class="badge badge-category" href="/categories/programming">PROGRAMMING</a>
+              
+          
+      
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/tags/c">c#</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/oop">oop</a>
+          
+      
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 9 min read
+</div>
+
+
+  </header>
+  
+  
+  <div class="post">
+    <p><img src="../dimensions.gif" alt="KomplexeDatentypen" title="https://i.imgur.com/wrD1ZBT.gif "></p>
+<h2 id="01-ein--merhdimensionale--verzweigte-arrays">01 Ein-, merhdimensionale &amp; verzweigte Arrays</h2>
+<p>Ein Array ist eine Datenstruktur, in der Variablen <strong>des gleichen Typs</strong> gespeichert werden können. Arrays eignen sich hervorragend um mit einer <strong>feststehenden</strong> Anzahl von Objekten des gleichen Typs zu arbeiten. Vorstellen kann man sich ein eindimensionales Array als einen Schrank mit Schubladen, bei dem jede Schublade eine Nummer trägt (0-X). Sobald der Schrank erst ein Mal geschreinert wurde, kann dessen Größe und nicht ohne weiteres verändert werden!
+Als Beispiel legen wir ein Array vom Typ <strong>int</strong> an:</p>
+<pre><code>int[] einDimensional;
+</code></pre>
+<p>Dieses Array ist jedoch noch leer. Als nächstes geben wir an, wie große das array sein soll:</p>
+<pre><code>einDimensional = new int[5];
+</code></pre>
+<p>Um auf eine Stelle im Array zuzugreifen, wird der Arrayname gefolgt von einer Eckigen Klammer, in der die Position, auf die wir zugreifen wollen angegeben wird:</p>
+<pre><code>einDimensional[0] = 12;
+einDimensional[1] = 4;
+einDimensional[2] = 53;
+einDimensional[3] = 6;
+einDimensional[4] = 136;
+</code></pre>
+<p>Dieses Array kann nun bis zu 5 <strong>int</strong> Werte enthalten. Wollen wir nun auf eines der Elemente zugreifen, sähe der Zugriff so aus:</p>
+<pre><code>int testZuweisung = einDimesional[4];
+</code></pre>
+<p>Wir weisen der neuen int Variable als Test das fünfte Arrayelement zu. Es handelt sich um das fünfte Element, da wir bei Arrays mit dem Zählen nicht bei 1 sondern bei 0 beginnen.</p>
+<p>Ein <strong>mehrdimensionales Array</strong> kann man sich als Tabelle vorstellen. Ein zweidimensionales Array mit zwei Reihen und drei Spalten würden wir wie folgt anlegen::</p>
+<pre><code>int[,] mehrDimensional = new int[2][3]; // , gibt an, dass es sich u ein mehrdimensionales Array handelt
+</code></pre>
+<p>Wir haben nun ein Array angelegt, das aus 2 Positionen besteht, die jeweils 3 weitere Elemente beinhalten. Wollen wir nun z.B. dem zweiten Element der ersten Reihe einen Wert zuweisen sähe dies wie folgt aus:</p>
+<pre><code>mehrDimensional[0][1] = 36;
+</code></pre>
+<p>Arrays können auch mit Hilfe einer Kurzschreibweise befüllt werden. Hier am Beispiel eines eindimensionalen und eines zweidimensionalen Arrays:</p>
+<pre><code>int[5] einDim = {12, 55, 46, 320, 88};
+int[2][3] zweiDim = {{6, 8, 3,} , {5, 45, 2}};
+</code></pre>
+<p>Ein <strong>verzweigtes Array</strong> ist ein Array, das weitere Arrays beinhaltet. Es existieren außerdem auch mehrdimensionale verzweigte arrays. Im Folgenden zu beiden je ein Beispiel inkl. Zugriff:</p>
+<pre><code>int[][] verzwArray = new int[3][]; //3 gibt hier die Menge der enthaltenen Arrays an
+
+//Befüllung
+verzwArray[0] = new int[2] //Das enthaltene erste Array beinhaltet 2 Felder
+verzwArray[1] = new int[3] //Das enthaltene erste Array beinhaltet 3 Felder 
+verzwArray[2] = = new int[4] //Das enthaltene erste Array beinhaltet 4 Felder 
+
+//Alternative befüllung des verzweigten Arrays
+verzwArray[0] = {52, 4};
+verzwArray[0] = {3, 23, 4};
+verzwArray[0] = {2, 11, 56, 0};
+
+//Alternativ kann das Array auch direkt nach der deklaration befüllt werden
+int[][] verzwArray = new int[][]
+{
+    new int[] = {52, 4},
+    new int[] = {3, 23, 4},
+    new int[] = {2, 11, 56, 0}
+};
+</code></pre>
+<p>Ein Zugriff auf das erste Element des zweiten Arrays würde wie folgt aussehen:</p>
+<pre><code>int testZuweisung = verzwArray[1][0];
+</code></pre>
+<p>Nun zur Syntax des mehrdimensionalen Verzweigten Arrays</p>
+<pre><code>//Mehrdimensionales Verzweigtes Array
+int[][,] verzwArrayMD = new int[3][,]
+{
+    new int[,] = { {52, 4} , {1, 12}, {8, 99}, {10, 21} },
+    new int[,] = { {45, 34} , {8, 36} },
+    new int[,] = { {0, 8} , {15, 160}, {65, 7} }       
+};
+</code></pre>
+<p>Nun wollten wir dem ersten Element[,0], an der dritten Stelle[2,] des ersten Arrays[0] zugreifen den Wert 42 zuweisen:</p>
+<pre><code>//Array 1 Stelle 3, erstes Element ist derzeit 8
+//Weise diesem Element die Zahl 42 zu.
+verzwArrayMD[0][2,0] = 42;
+</code></pre>
+<p><img src="../mindBlown.gif" alt="KomplexeDatentypen" title="https://media.giphy.com/media/fnpy7E5Sm1LSOvHvu8/giphy.gif "></p>
+<p>Das war für den Anfang ganz schön viel. Nach etwas Übung sind Arrays allerdings leicht zu benutzen und vor allem SEHR praktisch!</p>
+<h2 id="02-parameter-arrays--auflistungen">02 Parameter-Arrays &amp; Auflistungen</h2>
+<p>Arrays können auch als Parameter in eine Methode übergeben werden. So eine Methode kann z.B. so aussehen:</p>
+<pre><code>public int CrossSum(int[] arr){
+    //berechnet die Quersumme aller Arrayelemente
+    //return Quersumme
+}
+</code></pre>
+<p>Arrays werden in Methoden als Wert übergeben (ergo nicht als Referenz). Durch das voranstellen vom Schlüsselwort <strong>ref</strong> kann ein Array auch als Referenz übergeben werden. Kurzgesagt bedeutet Referenztyp, dass eine Referenz auf den Speicherplatz der Variablen vergeben wird, d.h. verändert man eine variable b, die eine Referenz zu Variable a enthält, so ändert sich auch Variable a. Werttypen sind kopien, wenn man sie verändert, verändert sich die ursprüngliche Variable nicht.</p>
+<p>Stellen wir uns vor, dass unser Witcher auf 5 verschiedene Monster Objekte trifft. Wir könnten nun eine Witche Klasse erstellen und eine Methode hinzufügen, die ein Array aus Monster-Objekten als Parameter auswertet und anschließend die Eigenschaften eines jeden Monsters auflistet. Hierfür räumen wir zunächst mal die Main Methode auf, verändern die Monster Klasse und erstellen eine Witcher Klasse.
+<img src="../leshen.gif" alt="Leshen" title="https://media1.tenor.com/images/226bb58d49ebbad4ae2bd02e358bc909/tenor.gif?itemid=13942176 "></p>
+<p><img src="../arr1.PNG" alt="ObjectArray" title="Class Monster Changes">
+<img src="../arr1p5.PNG" alt="ObjectArray" title="Class Fiend Changes">
+<img src="../arr2.PNG" alt="ObjectArray" title="Class Witcher">
+<img src="../arr3.PNG" alt="ObjectArray" title="Main Method">
+<img src="../arr4.PNG" alt="ObjectArray" title="Console Output"></p>
+<p>Unser Witcher ist nun einen Schritt näher Monster jagen zu können!
+<img src="../vesemir2.gif" alt="Leshen" title="https://media1.tenor.com/images/1cf891c677b3e87536101af034560844/tenor.gif?itemid=13783612 "></p>
+<p>Anstatt eines Arrays können wir auch eine Liste verwenden. Der Vorteil einer Liste ist, dass wir sie schnell mit einer <strong>foreach Anweisung</strong> durchlaufen können und wir können problemlos weitere Elemente zur Liste hinzufügen:</p>
+<p><em>Im Falle von einer Liste braucht die WitcherSense Methode etwas mehr arbeit, damit sie auch Child-Objekte von Monster.class (Fiend) akzeptiert.</em>
+<img src="../list1.PNG" alt="ObjectList" title="Class Witcher Changed"></p>
+<p>Eine <strong>foreach</strong> Anweisung durchläuft jedes Element in einer angegebenen Liste (hier <em>mon</em>) und weist dem Element eine Variable zu (platzhalterName). Der Variablenname wurde gewählt, u zu verdeutlichen, dass es sich hier nur um einen Bezeichner handelt, man also auch jeden anderen Namen hätte verwendet können. Diese Variable ist vom typ <strong>var</strong> (wie wir bereits aus JavaScript kennen). Anschließend werden die Methoden via Punktnotation aufgerufen.</p>
+<p><img src="../list2.PNG" alt="ObjectList" title="Main Class changes">
+<img src="../listOutput.PNG" alt="ObjectList" title=" Console Output"></p>
+<p>Da haben wir jetzt schon einiges geschafft, Applaus hierfür!
+<img src="../applause.gif" alt="Applaus" title="https://media2.giphy.com/media/PlrRBFGD4k0X3ru7SQ/giphy.gif "></p>
+<h2 id="03-arraylist--auflistungsinitialiser">03 ArrayList &amp; Auflistungsinitialiser</h2>
+<p><em>ArrayLists sind Arrays, deren größe dynamisch verändert werden kann. Sie werden dazu verwendet verschiedene Typen in einer Liste zu speichern. Wir könnten z.B. unser Witcher Objekt in der selben Liste wie unser Fiend Objekt speichern, dies wäre in normalen Arrays oder Listen nicht möglich, da diese einen bestimmten Typen benötigen.</em></p>
+<pre><code>ArrayList myAL = new ArrayList();
+        myAL.Add(vesemir);
+        myAL.Add(monster1);
+        myAL.Add(fiend);
+</code></pre>
+<p><strong>ArrayList wird jedoch als veraltet betrachtet und ist wenig performant. Daher sollte stattdessen List&lt;Object&gt; verwendet werden!</strong></p>
+<pre><code>List&lt;Object&gt; testL = new List&lt;Object&gt;();
+        testL.Add(vesemir);
+        testL.Add(monster1);
+        testL.Add(fiend);
+</code></pre>
+<p>Objektinitialisierer: Wir sind bisher schon über die Kurzschreibweise von Properties gestolpert (int variable {get; set;}), mit Hilfe dieser können wir bereits bei der Objekterstellung dafür sorgen, dass das Objekt mit mehr Variablen initialisiert wird, als der Konstruktor zulassen würde:</p>
+<p><img src="../initialisers1.PNG" alt="Object Initialisers" title="Changes to the Witcher Class">
+<img src="../initialisers2.PNG" alt="Object Initialisers" title="Changes to the Main Class"></p>
+<p>Wie wir sehen können, können wir die Properties direkt hinter dem Konstruktoraufruf des Objekts initialisieren.<br>
+Dies ist auch beim initialisieren von Objekten in Listen möglich:</p>
+<pre><code>List&lt;Witcher&gt; wolfSchoolList = new List&lt;Witcher&gt;()
+        {
+            new Witcher(&quot;Eskel&quot;, &quot;Wolf&quot;) {Level = 45, Title = &quot;None&quot; },
+            new Witcher(&quot;Lambert&quot;, &quot;Wolf&quot;) { Level = 31, Title = &quot;The Grumpy&quot; },
+            new Witcher(&quot;Geralt&quot;, &quot;Wolf&quot;) { Level = 45, Title = &quot;The White Wolf&quot; }
+        };
+</code></pre>
+<h2 id="04-listen-mit-einem-enumerator-durchlaufen">04 Listen mit einem Enumerator durchlaufen</h2>
+<p>Um sich ein Element in einer Liste anzeigen lassen zu können, muss man mit einem Enumerator (Aufzähler) die Liste durchlaufen. Zunächst muss ein Enumerator (hier <strong>enu</strong> gennant) angelegt werden. Dieser kann dann über die Methode MoveNext() auf das nächste Element in der Liste zeigen. Auf das aktuelle Listenelement kann mit der Methode Current() zugegriffen werden. Hier ein Beispiel anhand unserer ordinaryBeasts List:</p>
+<p><img src="../enumerator1.PNG" alt="Enumerator" title="Changes to the Main Class"></p>
+<p>Die Methode Reset() setzt den Enumerator wieder zurück auf seine ursprüngliche Position, diese befindet sich noch <strong>vor dem ersten Element</strong> der Liste!</p>
+<h2 id="05-indexer--warteschlangen--stapel">05 Indexer &amp; Warteschlangen &amp; Stapel</h2>
+<p>Ein Indexer ist eine besonere Art von Property, den man dazu verwenden kann z.B. ein privates Array durch die Property Schreibweise (get; set;) zu manipulieren. Hier ein Beispiel:</p>
+<pre><code>class IndexerTest
+{
+    private string[] testArray = new string[10]; // internal data storage
+
+    public string this[int index]
+    {
+        get
+        {
+            //Checks if the Array is out of bounds
+            //If the array is out of bounds no error will be thrown
+            //instead an exception will be thrown
+            if (index &lt; 0 &amp;&amp;  index &gt;= testArray.Length)
+                throw new IndexOutOfRangeException(&quot;Index out of    range&quot;);
+
+                //returns the private array
+                return testArray[index];
+        }
+
+        set
+        {   
+            //Same Exception handling as above
+            if (index &lt; 0 ||  index &gt;= testArray.Length)
+                throw new IndexOutOfRangeException(&quot;Index out of range&quot;);
+
+            //manioulates the private array
+            testArray[index] = value;
+        }
+    }
+}  
+</code></pre>
+<p>In der Main Methode könnten wir nun die das Array wie folgt befüllen:</p>
+<pre><code>StringDataStore storeString = new IndexerTest();
+
+storeString[0] = &quot;Cintra&quot;;
+storeString[1] = &quot;Oxenfurt&quot;;
+storeString[2] = &quot;Vizima&quot;;
+storeString[3] = &quot;Toussaint&quot;;
+</code></pre>
+<p>Durch den Indexer können wir dem internen Array des Objekts <strong>string</strong>s zuweisen, als ob wir ein normales Array ansprechen würden.</p>
+<p>Warteschlangen: Warteschlangen sind zirkuläre Arrays das heißt, wenn ein Objekt hinzugefügt wird, wird ein anderes aus der Queue gestoßen. (First in first out Prinzip).<br>
+Zitat</p>
+<blockquote>
+<p>Warteschlangen und Stapel sind nützlich, wenn Sie temporären Speicher für Informationen benötigen. Das heißt, wenn Sie ein Element nach dem Abrufen seines Werts verwerfen möchten. Verwenden Sie Queue, wenn Sie auf die Informationen in derselben Reihenfolge zugreifen müssen, in der Sie in der Sammlung gespeichert sind. Verwenden Sie Stack, wenn Sie in umgekehrter Reihenfolge auf die Informationen zugreifen müssen.</p>
+</blockquote>
+<p>Da normale die <strong>Queue</strong> Klasse veraltet ist, wird die <strong>Queue&lt;T&gt;</strong> Klasse verwendet (T ist ein Platzhalter für Type). Beispiel:</p>
+<pre><code>Queue&lt;string&gt; citiesTemp = new Queue&lt;string&gt;();
+    citiesTemp.Enqueue(&quot;Cintra&quot;);
+    citiesTemp.Enqueue(&quot;Oxenfurt&quot;);
+    citiesTemp.Enqueue(&quot;Vizima&quot;);
+    citiesTemp.Enqueue(&quot;Toussaint&quot;);
+
+ foreach (string city in citiesTemp)
+        {
+            Console.WriteLine(city);
+        }
+</code></pre>
+<p>Output in der Konsole:</p>
+<p><img src="../queue.PNG" alt="Queue" title="Queue Output"></p>
+<h2 id="06-dictionary-alt-hash-tabelle">06 Dictionary (alt: Hash-Tabelle)</h2>
+<p>Ein Dictionary ist ein Auflistungstyp, der einen Schlüssel mit einem Wert in Verbindung bringt.</p>
+<pre><code>//creating a Dictionary Collection
+Dictionary&lt;string, string&gt; witcherWiki = 
+new Dictionary&lt;string, string&gt;();
+
+//Adding Keys and Values
+witcherWiki.Add( &quot;Fiend&quot;, &quot;Fiends are walking mountains of muscle capped with horned, tooth-filled heads.&quot;);
+witcherWiki.Add( &quot;Witcher&quot;, &quot;Taken in as children, witchers-to-be are subjected to intense alchemical processes, consumption of mutagenic compounds, and relentless physical and magical training to make them dangerous and highly versatile against their vast array of opponents, many of which possess superhuman speed, strength and/or other deadly powers.&quot;);
+</code></pre>
+<h2 id="07-mit-aufzählungstypen-arbeiten">07 Mit Aufzählungstypen arbeiten</h2>
+<p>Aufzählungstypen (Enumerationstyp <strong>enum</strong>) ist eine Klasse die eine Gruppe aus Konstanten umfasst. Sei werden oft in Switch-Anweisungen verwendet um zwischen Zuständen zu wechseln. Beispiel Enum:</p>
+<pre><code>//A enum has by default values for each entry starting with zero
+enum HealthStatus{
+    Healthy,            //0
+    Wounded,            //1
+    SeverelyWounded,    //2
+    Dead                //3
+} 
+
+static void Main(string[] args) {
+
+    //Enum Access via Punktnotation
+    HealthStatus currentState = HealthStatus.Wounded;
+
+    //Showcasing the numeric values of each enum Element
+    Console.WriteLine(currentState);
+    //Will output: 1
+
+    switch(currentState){
+        HealthStatus.Healthy:
+            //play the normal Animation set
+            break;
+
+        HealthStatus.Wounded:
+            //play the wounded Animation set
+            break;
+
+        HealthStatus.SeverelyWounded:
+            //play the almost dead Animation set
+            break;
+
+        HealthStatus.Dead:
+            //Stop the Animations
+            //go to Game Over Screen
+            break;
+    }
+}
+</code></pre>
+<p><img src="../easy.gif" alt="Enum" title="https://media0.giphy.com/media/lqut5VxPEhP9zCJdUT/giphy.gif"> <em>Das war einfach!</em></p>
+<p> </p>
+<h2 id="08-strukturen--klassen">08 Strukturen &amp; Klassen</h2>
+<p>Strukturen = <strong>struct</strong><br>
+Klassen = <strong>class</strong>
+Zitat</p>
+<blockquote>
+<p>Klassen und Strukturen sind zwei der grundlegenden Konstrukte des allgemeinen Typsystems in .NET Framework. Bei beiden handelt es sich um eine Datenstruktur, die einen als logische Einheit zusammengehörenden Satz von Daten und Verhalten kapselt. Die Daten und die Verhalten sind die Member der Klasse oder Struktur. Diese enthalten deren Methoden, Eigenschaften, Ereignisse usw&hellip;.</p>
+</blockquote>
+<p>Strukturen (<strong>sruct</strong>) sind Werttypen (nicht Verweistypen) eignen sich vor allem für kleinere Datenansammlungen, die nach ihrer Erstellung nicht mehr geändert werden. Variablen in einem <strong>struct</strong> enthalten direkt die Daten und nicht, wie Variablen von Klassen nur einen Verweis auf die Daten. Sytnaktisch ähneln sie Klassen sehr und können auch ähnlich wie Klassen verwendet werden. Structs können jedoch keinen Default Constructor besitzen (leerer Konstruktor), sie können nur Konstruktoren besitzen, in denen allen Variablen ein Wert zugewiesen wird. Beispielcode für eine Struktur:</p>
+<pre><code>struct Farmer{
+
+    public int zipCode;
+    public string completeName;
+    public string socialSecurityNumber;
+
+    public int AcresOfLand (get; set;)
+
+    //Structs also can make use of MEthods, Events etc.
+    
+}
+</code></pre>
+<p>Genauer infos zu Strukturen können im letzten Link unter 08 im Quellverzeichnis dieser Seite gefunden werden.</p>
+<p> <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ </p>
+<h4 id="quellen-und-weiterführende-links"><strong>Quellen und weiterführende Links</strong></h4>
+<pre><code>01  https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/arrays/jagged-arrays
+https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/arrays/
+http://openbook.rheinwerk-verlag.de/c_von_a_bis_z/011_c_arrays_009.htm#mj1fafabf9621c60d77f7be86a236b292d
+
+02  https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters
+https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/passing-value-type-parameters
+https://docs.microsoft.com/de-de/dotnet/api/system.collections.generic.list-1?view=netframework-4.8
+
+03  https://docs.microsoft.com/de-de/dotnet/api/system.collections.arraylist?view=netframework-4.8
+
+04  https://docs.microsoft.com/de-de/dotnet/api/system.collections.generic.list-1.enumerator?view=netframework-4.8
+
+05 https://docs.microsoft.com/de-de/dotnet/api/system.collections.generic.queue-1?view=netframework-4.8
+ https://docs.microsoft.com/de-de/dotnet/api/system.collections.queue?view=netframework-4.8
+ https://www.tutorialsteacher.com/csharp/csharp-indexer
+ https://docs.microsoft.com/de-de/dotnet/api/system.collections.generic.queue-1?view=netframework-4.8
+
+06 https://docs.microsoft.com/de-de/dotnet/api/system.collections.hashtable?view=netframework-4.8
+https://docs.microsoft.com/de-de/dotnet/api/system.collections.generic.dictionary-2?view=netframework-4.8
+https://www.tutorialsteacher.com/csharp/csharp-dictionary
+
+07 https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/builtin-types/enum
+https://www.w3schools.com/cs/cs_enums.asp
+
+08 https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/
+https://www.tutorialsteacher.com/csharp/csharp-struct
+</code></pre>
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/programming/08fehlerbehandlung_und_suche/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">08. Fehlerbehandlung und Suche</span>
+    </a>
+    
+    
+    <a href="/programming/06interfaces/" class="navigation-next">
+      <span class="navigation-tittle">06. Interfaces a.k.a. Schnittstellen</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
+    
+</div>
+
+
+  
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+
+    
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+    
+
+
+
+    </body>
+</html>

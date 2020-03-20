@@ -1,0 +1,60 @@
+title = "PRG &\n3D"
+theme = "hyde-hyde"
+
+## Hugo Built-in Features
+# disqusShortname = "your-disqus-shortname"
+# googleAnalytics = "your-google-analytics-id"
+# enableRobotsTXT = true
+
+# summarylength = 30
+
+#paginate = 5
+
+## Site Settings
+[params]
+    author = "Marius Sauter"
+    title = "Title"
+    # description = "..."
+    authorimage = "/img/witcher_logo.png"
+    dateformat = "Jan 2, 2006"
+
+    # sidebar, copyright & license
+    copyright = "htr3n"
+    license = "CC BY-SA 4.0"
+    licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+    showBuiltWith = true
+
+    # https://highlightjs.org
+    highlightjs = true
+    highlightjsstyle = "github"
+    
+    # please choose either GraphComment or Disqus or Utterances
+    #GraphCommentId = "..."
+    #UtterancesRepo = "..." # https://utteranc.es/
+    #UtterancesIssueTerm = "..." # pathname, url, title, og:title
+    #UtterancesTheme = "..." # github-light or github-dark
+
+    # Table of contents
+    #toc = none, "hugo", or "tocbot"
+
+
+## Main Menu
+[[menu.main]]
+    name = "C# Programming"
+    weight = 100
+    identifier = "posts"
+    url = "/programming/"
+[[menu.main]]
+    name = "3D Lessons"
+    weight = 100
+    identifier = "3D"
+    url = "/3D/"
+[[menu.main]]
+    name = "Assets"
+    identifier = "portfolio"
+    weight = 200
+    url = "/assets/"
+
+
+
+

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.66.0" />
+
+    
+    
+    
+
+<title>06. Interfaces a.k.a. Schnittstellen • PRG &amp;
+3D</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="06. Interfaces a.k.a. Schnittstellen"/>
+<meta name="twitter:description" content="Eine Einführung in OOP"/>
+
+<meta property="og:title" content="06. Interfaces a.k.a. Schnittstellen" />
+<meta property="og:description" content="Eine Einführung in OOP" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/programming/06interfaces/" />
+<meta property="og:site_name" content="Title" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/scss/hyde-hyde.194a555fcad66b37e0f01e29e42f16ac6cd710a49793126dc33aeb9d88ceec95.css" integrity="sha256-GUpVX8rWazfg8B4p5C8WrGzXEKSXkxJtwzrrnYjO7JU=">
+
+
+<link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-3D">
+      <span class="site__title">
+        <a href="">PRG &amp;
+3D</a>
+      </span>
+      
+        
+        
+        
+        <div class="author-image">
+          <img src="img/witcher_logo.png" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
+      
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">PRG &amp;
+3D</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/3d/">
+						<span>3D Lessons</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/programming/">
+						<span>C# Programming</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/assets/">
+						<span>Assets</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2020 htr3n
+  
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+  
+</div>
+
+
+<div class="builtwith">
+Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+</div>
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>06. Interfaces a.k.a. Schnittstellen</h1>
+    
+    
+<div class="post__meta">
+    
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="/categories/c">C#</a>
+              •
+          
+              <a class="badge badge-category" href="/categories/programming">PROGRAMMING</a>
+              
+          
+      
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/tags/c">c#</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/oop">oop</a>
+          
+      
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 3 min read
+</div>
+
+
+  </header>
+  
+  
+  <div class="post">
+    <p><img src="../getStarted.gif" alt="Interfaces" title="https://media1.tenor.com/images/7dcc0b5a2c64d741b6edd12a88738cf9/tenor.gif?itemid=4767352"></p>
+<h2 id="01-einführung-in-schnittstellen">01 Einführung in Schnittstellen</h2>
+<p>Interfaces funktionieren im Grunde wie abstarkte Klassen. Man kann sie auch als Vertrag verstehen, der besagt: Jede Klasse die das Interface implementiert, muss alle Properties und Methoden des Interfaces implementieren.
+Schnittstelle oder Vererbung? Schnittstellen werden in C# häufig dazu genutzt Mehrfachvererbung (die in C# nicht möglich ist) darzustellen. Für die Entscheidung, ob ein Interface oder eine Klasse (Base Klasse) genutzt werden sollte, lässt sich generell sagen: Wenn die Baseklasse über <strong>keine</strong> implementierung verfügt und nur abstrakt ist, kann man i.d.R. ein Interface verwenden.
+Im Allgm. beschreiben Interfaces eine Can-Do Beziehung und Inheritance eine Is-A Beziehung.</p>
+<p><img src="../alice.gif" alt="Interfaces" title="https://i.pinimg.com/originals/3b/a4/1c/3ba41c16b44edd7d9c5c9faeec965fad.gif"></p>
+<h2 id="02-schnittstellen-deklarieren-und-implementieren">02 Schnittstellen deklarieren und implementieren</h2>
+<p>Im Folgenden ein Beispiel einer Interface Implementierung. Der Hintergedanke ist hierbei der, dass wir viele verschiedene Wesen haben werden, die jedoch keine gemeinsame Basisklasse besitzen, da sie doch zu verschieden sind, wie z.B.: Menschen und Monster. Trotz ihrer unterschiedlichkeit haben beide Wesen eine Sache gemeinsam: Sie leben. Lebende Wesen können sterben oder leben und wir gehen jetzt einfach mal davon aus, dass all unsere sterblichen Wesen auch eine Idle-Animation besitzen.</p>
+<pre><code>public interface IMortal{
+  
+  bool IsAlive{set; get;}
+  void PlayIdle(bool alive);
+
+}
+</code></pre>
+<p>Nun wieder zurück zu unserem Monster. Unsere Basisklasse Monster implementiert nun das Interface IMortal. Das bedeutet, dass es auch die Methode PlayIdle und die Property IsAlive implementieren muss.</p>
+<pre><code>public class Monster : IMortal{
+
+  //Methoden und Klassen die Monster ohnehin schon besitzt
+  //....
+  //...
+  //..
+  //.
+  bool IsAlive{get; set;} //implementiert!
+
+  void PlayIdle (bool alive) { //Implementiert!
+    if (alive){
+      //Play Animation
+    }
+    else{
+      //stop playing an Animation
+    }
+  }
+}
+</code></pre>
+<p>Und was hat uns das jetzt genutzt? Ganz einfach, wir wissen, dass jede Klasse, die das Interface IMortal implementiert (dne Vertrag eingeht) in jedem Fall eine Methode zum Prüfen des Status <strong>IsAlive</strong> und eine Methode um die Idle Animation abzuspielen besitzt!</p>
+<p><img src="../okay.gif" alt="Interfaces" title="https://media1.giphy.com/media/R459x856IfF6w/giphy.gif"></p>
+<h2 id="03-member-einer-schnittstelle-verdecken">03 Member einer Schnittstelle verdecken</h2>
+<p>Explicit Interface Implementation wird verwendet um dessen Member zu verdecken. Syntaktisch sieht dies wie folgt aus:</p>
+<pre><code>public interface IFaceIt{
+
+  void MethodA();
+  bool MethodB();
+}
+
+public class ThemInterfaces : IFaceIt{
+
+  void MethodA(){
+    //Mach etwas
+  }
+
+  //Diese Methode wird verdeckt
+  bool IFaceIt.MethodB(){
+    //Der Code inhier wird nur vom Interface selbst verwendet
+  }
+}
+</code></pre>
+<p>würden wir dies nun testen wäre das Ergebnis das folgende:</p>
+<pre><code>ThemInterfaces testObj = new ThemInterfaces();
+
+testObj.MethodeA(); //funktioniert
+tesObj.MethodB(); //wirft einen Fehler (compile time error)
+</code></pre>
+<h2 id="04-typprüfung-und--konvertierung">04 Typprüfung und -konvertierung</h2>
+<p>Wir können auch testen, ob ein anderes Objekt unser IMortal Interface implementiert. Wir gehen davon aus, dass wir eine Klasse namens <strong>Item</strong> angelegt hätten. Wir verwenden nun die sog. Single Cast Methode um zu prüfen, ob <strong>Item</strong> unser Interface implementiert. Also erweitern wir unsere statische Klasse.</p>
+<pre><code>public static bool CheckIfMortal(Object testThisObject){
+  //Wandelt Obj zu einem IMortal via TypeCast
+  //falls dieser Vorgang glückt, erhalten wir eien Referenz auf das Objekt, falls nicht, erhalten wir null
+  IMortal mortal = testThisObject as IMortal; 
+
+  if(mortal != null){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+</code></pre>
+<p>Wenn wir nun überprüfen, ob unsere Item Klasse ein IMortal interface implementiert, würden wir <em>false</em> als Rückgabeparameter erhalten.</p>
+<p><img src="../singleCast.PNG" alt="Interfaces" title="The Item is not mortal, yet the fiend is"></p>
+<p> <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ </p>
+<h4 id="quellen-und-weiterführende-links"><strong>Quellen und weiterführende Links</strong></h4>
+<pre><code>01  https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/interface
+    https://softwareengineering.stackexchange.com/questions/108240/why-are-interfaces-useful
+
+02  https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/interface
+
+03  https://hackernoon.com/hiding-members-via-explicit-interface-implementation-in-c-2c5u3oc1
+    https://gedgei.wordpress.com/2009/08/24/hiding-properties-and-methods-of-an-interface-in-c/
+
+04  https://secondboyet.com/Articles/DoubleCastingAntiPattern.html
+    https://stackoverflow.com/questions/410227/test-if-object-implements-interface</code></pre>
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/programming/07komplexe_datentypen/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">07. Komplexe Datentypen</span>
+    </a>
+    
+    
+    <a href="/programming/05polymorphismus/" class="navigation-next">
+      <span class="navigation-tittle">05. Polymorphismus</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
+    
+</div>
+
+
+  
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+
+    
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+    
+
+
+
+    </body>
+</html>
