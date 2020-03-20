@@ -1,5 +1,7 @@
 title = "PRG &\n3D"
 theme = "hyde-hyde"
+publishDir = "docs"
+
 
 ## Hugo Built-in Features
 # disqusShortname = "your-disqus-shortname"
@@ -11,14 +13,15 @@ theme = "hyde-hyde"
 #paginate = 5
 
 ## Site Settings
+    
 [params]
+    
     author = "Marius Sauter"
     title = "Title"
     # description = "..."
     authorimage = "/img/witcher_logo.png"
     dateformat = "Jan 2, 2006"
-    publishDir = "docs"
-    baseurl = "https://jackstreicher.github.io/PrgAnd3D/"
+   
 
     # sidebar, copyright & license
     copyright = "htr3n"
