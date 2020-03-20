@@ -18,6 +18,7 @@ theme = "hyde-hyde"
     authorimage = "/img/witcher_logo.png"
     dateformat = "Jan 2, 2006"
     publishDir = "docs"
+    baseurl = "https://jackstreicher.github.io/PrgAnd3D/"
 
     # sidebar, copyright & license
     copyright = "htr3n"
