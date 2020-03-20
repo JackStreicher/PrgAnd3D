@@ -1,7 +1,7 @@
 title = "PRG &\n3D"
 theme = "hyde-hyde"
 publishDir = "docs"
-baseURL = "https://jackstreicher.github.io/PrgAnd3D"
+baseUrl = "https://jackstreicher.github.io/PrgAnd3D"
 
 ## Hugo Built-in Features
 # disqusShortname = "your-disqus-shortname"
