@@ -17,8 +17,8 @@ Die beste Definition für eine Klasse stammt bereits aus der C#-Dokumentation vo
 >Klassen sind die grundlegendsten der C#-Typen. Eine Klasse ist eine Datenstruktur, die einen Zustand (Felder) und Aktionen (Methoden und andere Funktionsmember) in einer einzigen Einheit kombiniert. Eine Klasse stellt eine Definition für dynamisch erstellte Instanzen der Klasse, auch bekannt als Objekte bereit. Klassen unterstützen Vererbung und Polymorphie. Dies sind Mechanismen, durch die abgeleitete Klassen erweitert und Basisklassen spezialisiert werden können.
 
 Was sind Member? Member umfassen u.a.:
-- Felder (Variablen einer Klasse)
-- Methoden (Funktionalität der Klasse bzw. Aktionen, die von der Klasse ausgeführt werden können)
+- Felder (Variablen einer Klasse) 
+- Methoden (Funktionalität der Klasse bzw. Aktionen, die von der Klasse ausgeführt werden können)  
 Member einer Klasse können entweder **static** sein oder gehören zur Instanz einer Klasse (siehe 03).
 
 *Ein vollständige Liste der Member kann unter einem der Links von “Quellen und weiterführende Links” gefunden werden.*
@@ -26,14 +26,13 @@ Member einer Klasse können entweder **static** sein oder gehören zur Instanz e
 ## 02 Statische & Dynamische Klassen
 Hier gilt es eine wichtige Unterscheidung zu machen:
 Wenn von statischen Klassen gesprochen wird, spricht man zwar i.d.R. von Klassen mit dem Schlüsselwort **static**, jedoch kann man sich damit auch auf Klassen in einem größeren Kontext beziehen, gemeint damit sind alle "normalen" Klassen, bei denen schon zur Compile-Zeit alle Member bekannt sind. Es handelt sich also um die klassischen Klassen, die am Häufigsten verwendet werden. 
-Von dieser Art der statischen Klassen spricht man, um sie von dynamischen Klassen abzugrenzen.
-
+Von dieser Art der statischen Klassen spricht man, um sie von dynamischen Klassen abzugrenzen.  
 Bei dynamischen Klassen (dynamisch == zur Laufzeit) können zur Laufzeit neue Member hinzugefügt werden. Dies geschieht mit Hilfe von overrides und Dictionaries.
 
-Klassen mit dem Schlüsselwort **static** sind wie normale Klassen mit dem Unterschied, dass static Klassen nicht intanziiert werden können. Außerdem müssen alle Member einer **static** Klasse ebenfalls **static** sein.
+Klassen mit dem Schlüsselwort **static** sind wie normale Klassen mit dem Unterschied, dass static Klassen nicht instanziiert werden können. Außerdem müssen alle Member einer **static** Klasse ebenfalls **static** sein.
 Um also z.B. auf einen Member einer statischen (static) Klasse zuzugreifen, muss man diese direkt aufrufen (Punktnotation!).  
-Ein Beispiel.: Wir wollen auf die statische (static) Methode UseSenses der statischen (static) Klasse WitcherSenses zugreifen,   
-also würde der Aufruf wie folgt geschehen: 
+Ein Beispiel.: Wir wollen auf die statische (static) Methode UseSenses der statischen (static) Klasse WitcherSenses zugreifen,
+also würde der Aufruf wie folgt geschehen:  
 
     WitcherSenses.UseSenses() 
 
@@ -42,22 +41,25 @@ also würde der Aufruf wie folgt geschehen:
 
 
 ## 03 Instanzen
-Durch verwendung des *new* Operators können Intanzen von Klassen a.k.a. Ojekte angelegt werden.  
+Durch verwendung des *new* Operators können Instanzen von Klassen a.k.a. Ojekte angelegt werden.  
 Beispiel:  
-Wir haben bereits eine Klasse namens "Monster" angelegt, nun kann ein Objekt des Typs "Monster" mit Hilfe des *new* Operators erzeugt werden:   
+Wir haben bereits eine Klasse namens "Monster" angelegt, nun kann ein Objekt des Typs "Monster" mit Hilfe des *new* Operators erzeugt werden:  
 
-    Monster monster1 = new Monster();  
+    Monster monster1 = new Monster(); 
+
 in der Variable "monster1" ist nun eine Referenz auf eine Instanz der Klasse Monster gespeichert, auf das weiterhin über den Variablennamen zugegriffen werden kann.  
-Enthält die Klasse Monster z.B. eine Methode namens "SearchForEnemy", so können wir diese Methode unseres Monster-Objekts wie folgt ausführen: 
+Enthält die Klasse Monster z.B. eine Methode namens "SearchForEnemy", so können wir diese Methode unseres Monster-Objekts wie folgt ausführen:  
 
-    monster1.SearchForEnemy();  
+    monster1.SearchForEnemy(); 
+
 
 ## 04 Methoden - Funktionalität
 Methoden sind im Grunde die möglichen Aktionen einer Klasse.  
 Beispiel: Gehen wir davon aus, dass wir eine Klasse entwerfen, die ein standard Monster darstellen soll, dann müssen wir uns überlegen, was alle normalen Monster gemeinsam haben, dies umfasst Variablen, die die Eigenschaften der Monster beschreiben (Gewicht, Name usw.) und Methoden, die zusätzlich umfassen, was ein Monster "kann", wie Beispielsweise: Eat, Sleep, SearchForEnemy, Attack oder RunAway.  
 
 Hierbei haben verschiedene Methoden verschiedene Voraussetzungen, damit ihre Funktion implementiert werden kann.
-Als Übung legen wir nun eine Klasse Monster an.
+Als Übung legen wir nun eine Klasse namens *Monster* an.  
+
 ## 05 Einfache Methoden
 *Vergesst für dieses Beispiel nicht, das Wort "public" vor jede eurer Methoden zu schreiben da eure Main Methode ansonsten keinen Zugriff auf die Methode des Objekts hat.*  
 Wir bleiben bei unserem Beispiel mit der Klasse "Monster". Eine einfache Methode, die keine speziellen Voraussetzungen benötigt könnte "Sleep" sein.
@@ -69,7 +71,7 @@ Void bedeutet hier, dass die Methode keinen Wert zurückliefert (mehr hierzu in 
 ## 06 Methoden mit Prametern
 Methoden mit Parametern benötigen, wie der Name bereits sagt, Parameter mit Hilfe derer sie ihre Funktion erfüllen können.  
 
-![SimpleMethodPArameter](../monsterExample2.PNG "SimpleMethodParameter")
+![SimpleMethodParameter](../monsterExample2.PNG "SimpleMethodParameter")
 Der Methode Eat nimmt als Parameter einen float entgegen, der name "foodWeight" ist hierbei ein Platzhalter und kann beim Methodenaufruf durch einen beliebigen float Wert ersetzt werden. Ruft ein Monster-Objekt nun diese Methode auf, erhöht es **seine** weight Variable um den eingegebenen float Wert.
 Beispiel eines korrekten Aufrufs anhand des Monster Beispiels (aufruf in der Main Methode):
 >Monster monster1 = new Monster();  
@@ -97,13 +99,13 @@ Die Ausgabeparameter oder auch der Rückgabewert einer Methode können ähnlich 
 ![ReturnValueText](../monsterExample4Text.PNG "ReturnValueText")
 ![ReturnValueOutput](../monsterExample4Output.PNG "ReturnValueOutut")  
 
-Hier ein weiteres Beispiel, wie eine Methode mit Ausgabeparameter als Mitgabeparameter verwendet wird. Es scheint sich hierbei um eine magisches Monster zu handeln, das selbst dann sein Gewicht erhöht, wenn es sich selbst frisst..., jedoch veranschaulicht es die Verwendung von Methoden mit Ausgabeparametern.
+Hier ein weiteres Beispiel, wie eine Methode mit Ausgabeparameter als Mitgabeparameter verwendet wird. Es scheint sich hierbei um eine magisches Monster zu handeln, das selbst dann sein Gewicht erhöht, wenn es sich selbst frisst.
 
 ![ReturnValueText](../monsterExample4Text2.PNG "ReturnValueText")
 ![ReturnValueOutput](../monsterExample4Output2.PNG "ReturnValueOutut")  
 
 ## 09 Vordefinierte Methoden
-Nicht alle Methoden müssen selbst programmiert werden. Es gibt zahlreiche vordefinierte Methoden auf die zugegriffen werden kann. Eine dieser Methoden haben wir bereits kennengelernt und zwar "WriteLn" von der Klasse "Console". Der Namespace "System" stellt außerdem Methoden für mathematische Berechnungen zur Verfügung, wie z.B. Math.sqrt() um die Quadratwurzel zu ziehen oder Math.Abs() um den absoluten Wert einer Zahl zurückzuerhalten.
+Nicht alle Methoden müssen selbst programmiert werden. Es gibt zahlreiche vordefinierte Methoden auf die zugegriffen werden kann. Eine dieser Methoden haben wir bereits kennengelernt und zwar "WriteLine" von der Klasse "Console". Der Namespace "System" stellt außerdem Methoden für mathematische Berechnungen zur Verfügung, wie z.B. Math.sqrt() um die Quadratwurzel zu ziehen oder Math.Abs() um den absoluten Wert einer Zahl zurückzuerhalten.
 
 
 ![TheresMore](../waitTheresMore.gif "https://i.imgur.com/VHEK70o.gif")

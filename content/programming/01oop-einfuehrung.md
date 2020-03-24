@@ -15,7 +15,7 @@ tags: ["C#", "OOP", "Introduction"]
 C#, auch C#.NET (Visual Studio) ist eine Weiterentwicklung der Programmiersprache C++, letztere wird u.a. in Game Engines, wie der Unreal Engine verwendet. Bei C# handelt es sich um eine objektorientierte Programmiersprache.
 Die Raute, die dem C folgt symbolisiert vier, sich überlappende, Plus-Zeichen (C++++). Die Programmiersprache wurde von Microsoft entwickelt und erschien erstmals mit Visual Studio .NET 2002.  
 Für Nutzer der Windows Plattform stellt(e) sie eine alternative zu Java dar.  
-C# ist: Imperativ, Objektorientiert, stark typisiert - im Gegensatz zu JavaScript, dass Anstelle von differenzierten Typen "var" verwendet.
+C# ist: Imperativ, Objektorientiert, stark typisiert - im Gegensatz zu JavaScript, das Anstelle von differenzierten Typen "var" verwendet.
 
 ## 02 Das OOP-Programmierparadigma
 Paradigma == Grundprinzip || Denkweise.  
@@ -32,7 +32,7 @@ Zitat
 ## 04 Syntax
 ![Hello World Syntax](../Syntax.PNG "HelloWorld ")
 
->Linie 1: "using System;" gewährt zugriff auf Klassen aus dem Namespace "System".
+>Linie 1: "using System;" gewährt Zugriff auf Klassen aus dem Namespace "System".
 
 >Linie 4: "namespace" beinhaltet Klassen und andere Namespaces. Er wird zum organisieren des Codes verwendet. Wie auch mit "using System" können andere Klassen "using ConsoleApp1" verwenden, um Zugriff auf die Klassen des Namespace zu erhalten.
 
@@ -42,8 +42,9 @@ Zitat
 
 >Linie 10: "Console" ist eine Klasse aus dem Namespace "System".  
 Ohne den Code in Linie 1 könnten wir diese Klasse nicht verwenden und würden einen Compiler-Error erhalten.  
-"WriteLine" ist eine Methode innerhalb der der Klasse System. Durch Punktnotation (der Punkt zwischen System und WriteLine) können wir diese Funktion ausführen. Die Methode selbst gibt Text aus, in diesem Fall "Hello World".  
-Sollte man aus irgendeinem Grund darauf verzichtet haben den Code in Linie 1 zu tippen, kann man via Punktnotation auch auf die Methode zugreifen. Es verläuft in diesem Fall nach dem folgenden Muster: Namespace.Klasse.Methode, auf dieses Beispiel angewandt sähe der aufruf wie folgt aus: System.Console.WriteLine();
+"WriteLine" ist eine (vordefinierte) Methode, der Klasse Console innerhalb des namespace System. Durch Punktnotation (der Punkt zwischen Console und WriteLine) können wir diese Funktion ausführen. Die Methode selbst gibt Text aus, in diesem Fall "Hello World".  
+Sollte man aus irgendeinem Grund darauf verzichtet haben den Code in Linie 1 zu tippen, kann man via Punktnotation auch auf die Methode zugreifen. Es verläuft in diesem Fall nach dem folgenden Muster:  
+Namespace.Klasse.Methode, auf dieses Beispiel angewandt sähe der aufruf wie folgt aus: System.Console.WriteLine();
 
 ## 05 Bezeichner und Schlüsselwörter
 
@@ -70,7 +71,7 @@ Hier eine kleine Beispielliste (eine vollständige Liste kann unter "Quellen und
 ## 06 Einfache Datentypen,Konstanten und Literale 
 Einfache Datentypen sind Typen wie int, double, string, char etc.  
 Konstanten sind Variablen, die sofort initiliaisiert werden *müssen* und danach nicht mehr abgeändert werden dürfen.  
-Literale (Ganzzahl, Gleitkomma, logische Literale, Zeichenketten), die direkt in den Code geschrieben werden und somit *auch nicht* abgeändert werden können, ein Beispiel:
+Literale (Ganzzahl, Gleitkomma, logische Literale, Zeichenketten), die direkt in das Source-File geschrieben und können somit *auch nicht* abgeändert werden, ein Beispiel:
 
 **const string bsp = 'Lit1232';**  
 "bsp" stellt hier die Konstante dar, wie unschwer durch die Voranstellung von "const" zu erkennen ist.  
@@ -79,8 +80,8 @@ Literale (Ganzzahl, Gleitkomma, logische Literale, Zeichenketten), die direkt in
 ## 07 Variablen & Werte-Zuweisungen
 Variable: Ist ein (zusätzlicher) Name, der eine Speicheradresse symbolisiert.  
 
-string a. Durch den Typ string bedeutet, dass a nur eine Zeichenfolge zugewiesen werden kann. Auch Zahlen werden hier nur als Zeichen, also als Text interpretiert.  
-int b. Der Typ int steht für ganze Zahlen ohne Gleitkomma, d.h. einer Variable vom Typ int können alle ganzen Zahlen zwischen -2.147.483.648 und 2,147,483,647 zugewiesen werden (32-bit).
+string a; Durch den Typ string bedeutet, dass a nur eine Zeichenfolge zugewiesen werden kann. Auch Zahlen werden hier nur als Zeichen, also als Text interpretiert.  
+int b; Der Typ int steht für ganze Zahlen ohne Gleitkomma, d.h. einer Variable vom Typ int können alle ganzen Zahlen zwischen -2.147.483.648 und 2,147,483,647 zugewiesen werden (32-bit).
 Zusammengefasst bedeutet dies, dass a = "ich bin ein string" nicht zugewiesen werden könnte, da a eine ganze Zahl erwartet (der compiler wird in diesem Fall einen Fehler werfen). Ebenso wenig kann man b = 1232 setzen, da 1232 keine Zeichenfolge ist.  
 Es gibt Möglichkeiten die Datentypen zu konvertieren, doch dazu mehr im nächsten Unterpunkt.
 

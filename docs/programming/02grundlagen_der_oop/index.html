@@ -79,7 +79,7 @@
         
         
         <div class="author-image">
-          <img src="https://jackstreicher.github.io/PrgAnd3D%5c/witcher_logo.png" alt="Author Image" class="img--circle img--headshot element--center">
+          <img src="https://jackstreicher.github.io/PrgAnd3D~witcher_logo.png" alt="Author Image" class="img--circle img--headshot element--center">
         </div>
         
       
@@ -224,36 +224,36 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
 <p>Was sind Member? Member umfassen u.a.:</p>
 <ul>
 <li>Felder (Variablen einer Klasse)</li>
-<li>Methoden (Funktionalität der Klasse bzw. Aktionen, die von der Klasse ausgeführt werden können)
+<li>Methoden (Funktionalität der Klasse bzw. Aktionen, die von der Klasse ausgeführt werden können)<br>
 Member einer Klasse können entweder <strong>static</strong> sein oder gehören zur Instanz einer Klasse (siehe 03).</li>
 </ul>
 <p><em>Ein vollständige Liste der Member kann unter einem der Links von “Quellen und weiterführende Links” gefunden werden.</em></p>
 <h2 id="02-statische--dynamische-klassen">02 Statische &amp; Dynamische Klassen</h2>
 <p>Hier gilt es eine wichtige Unterscheidung zu machen:
 Wenn von statischen Klassen gesprochen wird, spricht man zwar i.d.R. von Klassen mit dem Schlüsselwort <strong>static</strong>, jedoch kann man sich damit auch auf Klassen in einem größeren Kontext beziehen, gemeint damit sind alle &ldquo;normalen&rdquo; Klassen, bei denen schon zur Compile-Zeit alle Member bekannt sind. Es handelt sich also um die klassischen Klassen, die am Häufigsten verwendet werden.
-Von dieser Art der statischen Klassen spricht man, um sie von dynamischen Klassen abzugrenzen.</p>
-<p>Bei dynamischen Klassen (dynamisch == zur Laufzeit) können zur Laufzeit neue Member hinzugefügt werden. Dies geschieht mit Hilfe von overrides und Dictionaries.</p>
-<p>Klassen mit dem Schlüsselwort <strong>static</strong> sind wie normale Klassen mit dem Unterschied, dass static Klassen nicht intanziiert werden können. Außerdem müssen alle Member einer <strong>static</strong> Klasse ebenfalls <strong>static</strong> sein.
+Von dieser Art der statischen Klassen spricht man, um sie von dynamischen Klassen abzugrenzen.<br>
+Bei dynamischen Klassen (dynamisch == zur Laufzeit) können zur Laufzeit neue Member hinzugefügt werden. Dies geschieht mit Hilfe von overrides und Dictionaries.</p>
+<p>Klassen mit dem Schlüsselwort <strong>static</strong> sind wie normale Klassen mit dem Unterschied, dass static Klassen nicht instanziiert werden können. Außerdem müssen alle Member einer <strong>static</strong> Klasse ebenfalls <strong>static</strong> sein.
 Um also z.B. auf einen Member einer statischen (static) Klasse zuzugreifen, muss man diese direkt aufrufen (Punktnotation!).<br>
-Ein Beispiel.: Wir wollen auf die statische (static) Methode UseSenses der statischen (static) Klasse WitcherSenses zugreifen,<br>
+Ein Beispiel.: Wir wollen auf die statische (static) Methode UseSenses der statischen (static) Klasse WitcherSenses zugreifen,
 also würde der Aufruf wie folgt geschehen:</p>
 <pre><code>WitcherSenses.UseSenses() 
 </code></pre>
 <h2 id="03-instanzen">03 Instanzen</h2>
-<p>Durch verwendung des <em>new</em> Operators können Intanzen von Klassen a.k.a. Ojekte angelegt werden.<br>
+<p>Durch verwendung des <em>new</em> Operators können Instanzen von Klassen a.k.a. Ojekte angelegt werden.<br>
 Beispiel:<br>
 Wir haben bereits eine Klasse namens &ldquo;Monster&rdquo; angelegt, nun kann ein Objekt des Typs &ldquo;Monster&rdquo; mit Hilfe des <em>new</em> Operators erzeugt werden:</p>
-<pre><code>Monster monster1 = new Monster();  
+<pre><code>Monster monster1 = new Monster(); 
 </code></pre>
 <p>in der Variable &ldquo;monster1&rdquo; ist nun eine Referenz auf eine Instanz der Klasse Monster gespeichert, auf das weiterhin über den Variablennamen zugegriffen werden kann.<br>
 Enthält die Klasse Monster z.B. eine Methode namens &ldquo;SearchForEnemy&rdquo;, so können wir diese Methode unseres Monster-Objekts wie folgt ausführen:</p>
-<pre><code>monster1.SearchForEnemy();  
+<pre><code>monster1.SearchForEnemy(); 
 </code></pre>
 <h2 id="04-methoden---funktionalität">04 Methoden - Funktionalität</h2>
 <p>Methoden sind im Grunde die möglichen Aktionen einer Klasse.<br>
 Beispiel: Gehen wir davon aus, dass wir eine Klasse entwerfen, die ein standard Monster darstellen soll, dann müssen wir uns überlegen, was alle normalen Monster gemeinsam haben, dies umfasst Variablen, die die Eigenschaften der Monster beschreiben (Gewicht, Name usw.) und Methoden, die zusätzlich umfassen, was ein Monster &ldquo;kann&rdquo;, wie Beispielsweise: Eat, Sleep, SearchForEnemy, Attack oder RunAway.</p>
 <p>Hierbei haben verschiedene Methoden verschiedene Voraussetzungen, damit ihre Funktion implementiert werden kann.
-Als Übung legen wir nun eine Klasse Monster an.</p>
+Als Übung legen wir nun eine Klasse namens <em>Monster</em> an.</p>
 <h2 id="05-einfache-methoden">05 Einfache Methoden</h2>
 <p><em>Vergesst für dieses Beispiel nicht, das Wort &ldquo;public&rdquo; vor jede eurer Methoden zu schreiben da eure Main Methode ansonsten keinen Zugriff auf die Methode des Objekts hat.</em><br>
 Wir bleiben bei unserem Beispiel mit der Klasse &ldquo;Monster&rdquo;. Eine einfache Methode, die keine speziellen Voraussetzungen benötigt könnte &ldquo;Sleep&rdquo; sein.</p>
@@ -262,7 +262,7 @@ Wird die Methode &ldquo;Sleep&rdquo; aufgerufen, wird die Zeile &ldquo;zZZzzZZ&r
 Void bedeutet hier, dass die Methode keinen Wert zurückliefert (mehr hierzu in 07).</p>
 <h2 id="06-methoden-mit-prametern">06 Methoden mit Prametern</h2>
 <p>Methoden mit Parametern benötigen, wie der Name bereits sagt, Parameter mit Hilfe derer sie ihre Funktion erfüllen können.</p>
-<p><img src="../monsterExample2.PNG" alt="SimpleMethodPArameter" title="SimpleMethodParameter">
+<p><img src="../monsterExample2.PNG" alt="SimpleMethodParameter" title="SimpleMethodParameter">
 Der Methode Eat nimmt als Parameter einen float entgegen, der name &ldquo;foodWeight&rdquo; ist hierbei ein Platzhalter und kann beim Methodenaufruf durch einen beliebigen float Wert ersetzt werden. Ruft ein Monster-Objekt nun diese Methode auf, erhöht es <strong>seine</strong> weight Variable um den eingegebenen float Wert.
 Beispiel eines korrekten Aufrufs anhand des Monster Beispiels (aufruf in der Main Methode):</p>
 <blockquote>
@@ -283,11 +283,11 @@ Rufen wir die Methode wie folgt auf:</p>
 <p>Die Ausgabeparameter oder auch der Rückgabewert einer Methode können ähnlich wie Variablen vom selben Typ verwendet werden. Man kann sie in Berechnungen, Textausgaben oder in die Mitgabeparameter von weiteren Methoden (die man aufruft) einbauen. Hier ein einfaches Beispiel der Verwendung einer Methode mit Ausgabeparameter durch eine Textausgabe:</p>
 <p><img src="../monsterExample4Text.PNG" alt="ReturnValueText" title="ReturnValueText">
 <img src="../monsterExample4Output.PNG" alt="ReturnValueOutput" title="ReturnValueOutut"></p>
-<p>Hier ein weiteres Beispiel, wie eine Methode mit Ausgabeparameter als Mitgabeparameter verwendet wird. Es scheint sich hierbei um eine magisches Monster zu handeln, das selbst dann sein Gewicht erhöht, wenn es sich selbst frisst&hellip;, jedoch veranschaulicht es die Verwendung von Methoden mit Ausgabeparametern.</p>
+<p>Hier ein weiteres Beispiel, wie eine Methode mit Ausgabeparameter als Mitgabeparameter verwendet wird. Es scheint sich hierbei um eine magisches Monster zu handeln, das selbst dann sein Gewicht erhöht, wenn es sich selbst frisst.</p>
 <p><img src="../monsterExample4Text2.PNG" alt="ReturnValueText" title="ReturnValueText">
 <img src="../monsterExample4Output2.PNG" alt="ReturnValueOutput" title="ReturnValueOutut"></p>
 <h2 id="09-vordefinierte-methoden">09 Vordefinierte Methoden</h2>
-<p>Nicht alle Methoden müssen selbst programmiert werden. Es gibt zahlreiche vordefinierte Methoden auf die zugegriffen werden kann. Eine dieser Methoden haben wir bereits kennengelernt und zwar &ldquo;WriteLn&rdquo; von der Klasse &ldquo;Console&rdquo;. Der Namespace &ldquo;System&rdquo; stellt außerdem Methoden für mathematische Berechnungen zur Verfügung, wie z.B. Math.sqrt() um die Quadratwurzel zu ziehen oder Math.Abs() um den absoluten Wert einer Zahl zurückzuerhalten.</p>
+<p>Nicht alle Methoden müssen selbst programmiert werden. Es gibt zahlreiche vordefinierte Methoden auf die zugegriffen werden kann. Eine dieser Methoden haben wir bereits kennengelernt und zwar &ldquo;WriteLine&rdquo; von der Klasse &ldquo;Console&rdquo;. Der Namespace &ldquo;System&rdquo; stellt außerdem Methoden für mathematische Berechnungen zur Verfügung, wie z.B. Math.sqrt() um die Quadratwurzel zu ziehen oder Math.Abs() um den absoluten Wert einer Zahl zurückzuerhalten.</p>
 <p><img src="../waitTheresMore.gif" alt="TheresMore" title="https://i.imgur.com/VHEK70o.gif">
  </p>
 <h2 id="10-methoden-überladen--erweiterungsmethoden">10 Methoden überladen &amp; Erweiterungsmethoden</h2>

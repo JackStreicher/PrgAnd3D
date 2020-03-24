@@ -79,7 +79,7 @@
         
         
         <div class="author-image">
-          <img src="https://jackstreicher.github.io/PrgAnd3D%5c/witcher_logo.png" alt="Author Image" class="img--circle img--headshot element--center">
+          <img src="https://jackstreicher.github.io/PrgAnd3D~witcher_logo.png" alt="Author Image" class="img--circle img--headshot element--center">
         </div>
         
       
@@ -220,7 +220,7 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
 <p>C#, auch C#.NET (Visual Studio) ist eine Weiterentwicklung der Programmiersprache C++, letztere wird u.a. in Game Engines, wie der Unreal Engine verwendet. Bei C# handelt es sich um eine objektorientierte Programmiersprache.
 Die Raute, die dem C folgt symbolisiert vier, sich überlappende, Plus-Zeichen (C++++). Die Programmiersprache wurde von Microsoft entwickelt und erschien erstmals mit Visual Studio .NET 2002.<br>
 Für Nutzer der Windows Plattform stellt(e) sie eine alternative zu Java dar.<br>
-C# ist: Imperativ, Objektorientiert, stark typisiert - im Gegensatz zu JavaScript, dass Anstelle von differenzierten Typen &ldquo;var&rdquo; verwendet.</p>
+C# ist: Imperativ, Objektorientiert, stark typisiert - im Gegensatz zu JavaScript, das Anstelle von differenzierten Typen &ldquo;var&rdquo; verwendet.</p>
 <h2 id="02-das-oop-programmierparadigma">02 Das OOP-Programmierparadigma</h2>
 <p>Paradigma == Grundprinzip || Denkweise.<br>
 In der OOP wird der Code in Daten und Objekte gekapselt. Jedes Objekt repräsentiert tatsächlich eine Art &ldquo;Objekt&rdquo;. Im Bezug auf die OOP kann alles als ein Objekt angesehen werden: Tiere sind Objekte, Tische sind Objekte und so weiter. Will man z.B. für ein Spiel einen Menschen erzeugen, so macht es Sinn, ein Mensch-Objekt anzulegen, dass die Informationen und Funktionen eines standard Menschen beinhaltet.</p>
@@ -238,7 +238,7 @@ In der OOP wird der Code in Daten und Objekte gekapselt. Jedes Objekt repräsent
 <h2 id="04-syntax">04 Syntax</h2>
 <p><img src="../Syntax.PNG" alt="Hello World Syntax" title="HelloWorld "></p>
 <blockquote>
-<p>Linie 1: &ldquo;using System;&rdquo; gewährt zugriff auf Klassen aus dem Namespace &ldquo;System&rdquo;.</p>
+<p>Linie 1: &ldquo;using System;&rdquo; gewährt Zugriff auf Klassen aus dem Namespace &ldquo;System&rdquo;.</p>
 </blockquote>
 <blockquote>
 <p>Linie 4: &ldquo;namespace&rdquo; beinhaltet Klassen und andere Namespaces. Er wird zum organisieren des Codes verwendet. Wie auch mit &ldquo;using System&rdquo; können andere Klassen &ldquo;using ConsoleApp1&rdquo; verwenden, um Zugriff auf die Klassen des Namespace zu erhalten.</p>
@@ -252,8 +252,9 @@ In der OOP wird der Code in Daten und Objekte gekapselt. Jedes Objekt repräsent
 <blockquote>
 <p>Linie 10: &ldquo;Console&rdquo; ist eine Klasse aus dem Namespace &ldquo;System&rdquo;.<br>
 Ohne den Code in Linie 1 könnten wir diese Klasse nicht verwenden und würden einen Compiler-Error erhalten.<br>
-&ldquo;WriteLine&rdquo; ist eine Methode innerhalb der der Klasse System. Durch Punktnotation (der Punkt zwischen System und WriteLine) können wir diese Funktion ausführen. Die Methode selbst gibt Text aus, in diesem Fall &ldquo;Hello World&rdquo;.<br>
-Sollte man aus irgendeinem Grund darauf verzichtet haben den Code in Linie 1 zu tippen, kann man via Punktnotation auch auf die Methode zugreifen. Es verläuft in diesem Fall nach dem folgenden Muster: Namespace.Klasse.Methode, auf dieses Beispiel angewandt sähe der aufruf wie folgt aus: System.Console.WriteLine();</p>
+&ldquo;WriteLine&rdquo; ist eine (vordefinierte) Methode, der Klasse Console innerhalb des namespace System. Durch Punktnotation (der Punkt zwischen Console und WriteLine) können wir diese Funktion ausführen. Die Methode selbst gibt Text aus, in diesem Fall &ldquo;Hello World&rdquo;.<br>
+Sollte man aus irgendeinem Grund darauf verzichtet haben den Code in Linie 1 zu tippen, kann man via Punktnotation auch auf die Methode zugreifen. Es verläuft in diesem Fall nach dem folgenden Muster:<br>
+Namespace.Klasse.Methode, auf dieses Beispiel angewandt sähe der aufruf wie folgt aus: System.Console.WriteLine();</p>
 </blockquote>
 <h2 id="05-bezeichner-und-schlüsselwörter">05 Bezeichner und Schlüsselwörter</h2>
 <p>Bezeichner: Selbstvergebene Variablennamen, Funtkionsnamen etc. ein Beispiel: float zahlA;<br>
@@ -316,14 +317,14 @@ Hier eine kleine Beispielliste (eine vollständige Liste kann unter &ldquo;Quell
 <h2 id="06-einfache-datentypenkonstanten-und-literale">06 Einfache Datentypen,Konstanten und Literale</h2>
 <p>Einfache Datentypen sind Typen wie int, double, string, char etc.<br>
 Konstanten sind Variablen, die sofort initiliaisiert werden <em>müssen</em> und danach nicht mehr abgeändert werden dürfen.<br>
-Literale (Ganzzahl, Gleitkomma, logische Literale, Zeichenketten), die direkt in den Code geschrieben werden und somit <em>auch nicht</em> abgeändert werden können, ein Beispiel:</p>
+Literale (Ganzzahl, Gleitkomma, logische Literale, Zeichenketten), die direkt in das Source-File geschrieben und können somit <em>auch nicht</em> abgeändert werden, ein Beispiel:</p>
 <p><strong>const string bsp = &lsquo;Lit1232&rsquo;;</strong><br>
 &ldquo;bsp&rdquo; stellt hier die Konstante dar, wie unschwer durch die Voranstellung von &ldquo;const&rdquo; zu erkennen ist.<br>
 &ldquo;Lit1232&rdquo; ist hierbei das Literal.</p>
 <h2 id="07-variablen--werte-zuweisungen">07 Variablen &amp; Werte-Zuweisungen</h2>
 <p>Variable: Ist ein (zusätzlicher) Name, der eine Speicheradresse symbolisiert.</p>
-<p>string a. Durch den Typ string bedeutet, dass a nur eine Zeichenfolge zugewiesen werden kann. Auch Zahlen werden hier nur als Zeichen, also als Text interpretiert.<br>
-int b. Der Typ int steht für ganze Zahlen ohne Gleitkomma, d.h. einer Variable vom Typ int können alle ganzen Zahlen zwischen -2.147.483.648 und 2,147,483,647 zugewiesen werden (32-bit).
+<p>string a; Durch den Typ string bedeutet, dass a nur eine Zeichenfolge zugewiesen werden kann. Auch Zahlen werden hier nur als Zeichen, also als Text interpretiert.<br>
+int b; Der Typ int steht für ganze Zahlen ohne Gleitkomma, d.h. einer Variable vom Typ int können alle ganzen Zahlen zwischen -2.147.483.648 und 2,147,483,647 zugewiesen werden (32-bit).
 Zusammengefasst bedeutet dies, dass a = &ldquo;ich bin ein string&rdquo; nicht zugewiesen werden könnte, da a eine ganze Zahl erwartet (der compiler wird in diesem Fall einen Fehler werfen). Ebenso wenig kann man b = 1232 setzen, da 1232 keine Zeichenfolge ist.<br>
 Es gibt Möglichkeiten die Datentypen zu konvertieren, doch dazu mehr im nächsten Unterpunkt.</p>
 <h2 id="08-typkompatibilität--typkonversion">08 Typkompatibilität &amp; Typkonversion</h2>
