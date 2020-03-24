@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Encapsulation on PRG &amp;
+3D</title>
+    <link>https://jackstreicher.github.io/PrgAnd3D/tags/encapsulation/</link>
+    <description>Recent content in Encapsulation on PRG &amp;
+3D</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://jackstreicher.github.io/PrgAnd3D/tags/encapsulation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>03. Kapselung, Konstruktoren und Namesnräume</title>
+      <link>https://jackstreicher.github.io/PrgAnd3D/programming/03kapselung_konstruktoren_namensraeume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/03kapselung_konstruktoren_namensraeume/</guid>
+      <description>01 Kapselung und Eigenschaften Wenn ein Objekt entworfen wird, muss überlegt werden, welche Member des Objekts für den Benutzer sichtbar (public) oder verborgen (private || protected) sind. Eine Kapselung besteht dann, wenn ein Member für den Benutzer nicht sichtbar ist.
+Die Gründe für eine Kapselung sind, dass der Benutzer z.B. als privat deklarierte Member des Objekts nicht ändern kann, wodurch weniger Fehler durch den Benutzer entstehen können. Fehler wären in diesem Fall die Zerstörung des Codes, durch Fehleingaben oder durch Manipulation von Membern, die nicht manipuliert werden sollten.</description>
+    </item>
+    
+  </channel>
+</rss>

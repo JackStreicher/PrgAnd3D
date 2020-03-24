@@ -1,7 +1,7 @@
 title = "PRG &\n3D"
 theme = "hyde-hyde"
 publishDir = "docs"
-baseURL = "https://jackstreicher.github.io/PrgAnd3D"
+baseURL = "https://jackstreicher.github.io/PrgAnd3D/"
 
 ## Hugo Built-in Features
 # disqusShortname = "your-disqus-shortname"
@@ -19,7 +19,7 @@ baseURL = "https://jackstreicher.github.io/PrgAnd3D"
     author = "Marius Sauter"
     title = "Title"
     # description = "..."
-    authorimage = "{{.Site.BaseURL}}witcher_logo.png"
+    authorimage = "witcher_logo.png"
     dateformat = "Jan 2, 2006"
    
 

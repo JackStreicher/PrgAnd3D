@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Basics on PRG &amp;
+3D</title>
+    <link>https://jackstreicher.github.io/PrgAnd3D/tags/basics/</link>
+    <description>Recent content in Basics on PRG &amp;
+3D</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://jackstreicher.github.io/PrgAnd3D/tags/basics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>02. Grundlagen der OOP</title>
+      <link>https://jackstreicher.github.io/PrgAnd3D/programming/02grundlagen_der_oop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/02grundlagen_der_oop/</guid>
+      <description>01 Klassen, Felder &amp;amp; Methoden Die beste Definition für eine Klasse stammt bereits aus der C#-Dokumentation von Microsoft:
+ Klassen sind die grundlegendsten der C#-Typen. Eine Klasse ist eine Datenstruktur, die einen Zustand (Felder) und Aktionen (Methoden und andere Funktionsmember) in einer einzigen Einheit kombiniert. Eine Klasse stellt eine Definition für dynamisch erstellte Instanzen der Klasse, auch bekannt als Objekte bereit. Klassen unterstützen Vererbung und Polymorphie. Dies sind Mechanismen, durch die abgeleitete Klassen erweitert und Basisklassen spezialisiert werden können.</description>
+    </item>
+    
+  </channel>
+</rss>

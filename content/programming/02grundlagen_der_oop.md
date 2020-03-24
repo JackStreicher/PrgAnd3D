@@ -6,7 +6,7 @@ screenshot: 'Skyrim_Hidden_Peak_Barrow.jpg'
 layout: 'portfolio'
 featured: true
 categories: [ "C#", "Programming" ]
-tags: ["C#", "OOP", "Introduction"]
+tags: ["C#", "OOP", "Basics"]
 
 
 ---

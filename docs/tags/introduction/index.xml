@@ -31,15 +31,5 @@ Set your configuration publish folder to _site The default is for Jekyll to publ
 Für Nutzer der Windows Plattform stellt(e) sie eine alternative zu Java dar.</description>
     </item>
     
-    <item>
-      <title>02. Grundlagen der OOP</title>
-      <link>https://jackstreicher.github.io/PrgAnd3D/programming/02grundlagen_der_oop/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/02grundlagen_der_oop/</guid>
-      <description>01 Klassen, Felder &amp;amp; Methoden Die beste Definition für eine Klasse stammt bereits aus der C#-Dokumentation von Microsoft:
- Klassen sind die grundlegendsten der C#-Typen. Eine Klasse ist eine Datenstruktur, die einen Zustand (Felder) und Aktionen (Methoden und andere Funktionsmember) in einer einzigen Einheit kombiniert. Eine Klasse stellt eine Definition für dynamisch erstellte Instanzen der Klasse, auch bekannt als Objekte bereit. Klassen unterstützen Vererbung und Polymorphie. Dies sind Mechanismen, durch die abgeleitete Klassen erweitert und Basisklassen spezialisiert werden können.</description>
-    </item>
-    
   </channel>
 </rss>
