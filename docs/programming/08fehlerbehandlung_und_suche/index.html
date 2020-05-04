@@ -204,7 +204,7 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
     
     
     <br/>
-    <i class="fas fa-clock"></i> 0 min read
+    <i class="fas fa-clock"></i> 3 min read
 </div>
 
 
@@ -212,8 +212,53 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
   
   
   <div class="post">
-    <h2 id="heading"></h2>
+    <p><img src="../type2.gif" alt="Error Handling" title="https://media.giphy.com/media/toXKzaJP3WIgM/giphy.gif "></p>
+<h2 id="01-fehlerarten">01 Fehlerarten</h2>
+<p>Syntaxfehler: Fehhler die beim Schreiben des Codes auftreten und von VS direkt angezeigt werden.</p>
+<p>Laufzeitfehler: Fehler die zur Laufzeit des Programms auftreten, d.h. wenn keine Syntaxfehler vorliegen und die kompilierung erfolgt ist und das Programm ausgeführt wird. Diese Fehler treten z.B. auf, wenn man versucht auf eine Datei zuzugreifen, die nicht existiert.</p>
+<p>Logische Fehler: Diese Fehler treten auf, wärhend das Programm verwendet wird. Hierbei handelt es sich z.B. um Abläufe, die der Entwickler u.U. nicht vorausgesehen hat, oder falsche Annahmen des Entwicklers (z.B., dass eine Methode immer den selben Wert zurückliefert, tut Sie dies nicht führt es zu Problemen). Häufig handelt es sich hierbei um Nutzereingaben, mit denen das Programm nicht umgehen kann und die der Entwickler nicht bedacht hat (und auch nicht durch Exception Handling abfängt). Der Logikfehler muss also im Code korrigiert und das Programm neu kompiliert werden.</p>
+<h2 id="02-strukturierte-fehlerbehebung">02 Strukturierte Fehlerbehebung</h2>
+<p><img src="../doOrDont.gif" alt="Error Handling" title="https://miro.medium.com/max/1000/0*qFTabwOQbqE_sqhD.gif"></p>
+<p>Oft genügt es, an der enstsprchenden Stelle einen Debug.Log() (Unity), oder einen Console.WriteLine() zu platzieren um zu prüfen, ob das Programm bis zur entsprechenden Stelle durchläuft. Jedoch ist diese Maßnahme nicht immer ausreichend und uns stehen bessere Tools zur Verfügung, wie in den nächsten Unterkapiteln beschrieben wird.</p>
+<h2 id="03-exception-handling">03 Exception Handling</h2>
+<p>Durch einen sogenannten Try Catch block wird auf Mögliche Fehler direkt reagiert, damit das Programm weiterläuft und der Nutzer im besten Fall gar nichts von dem auftretenden Fehler mitbekommt.</p>
+<p><img src="../exceptionHandling.PNG" alt="Error Handling" title="Exception Handling understanding"></p>
+<p>Wir versuchen nun gezielt eine Exception zu erzeugen (zur Veranschaulichung), indem wir ein Array mit einem Index aufrufen wollen, der nicht exisitert.
+<img src="../exceptionHandling2.PNG" alt="Error Handling" title="Exception Handling Example"></p>
+<p>Uns ist an dieser Stelle bereits der Finally Block aufgefallen: Dieser wird verwendet um aufzuräumen. Aufräumen umfasst in diesem Bezug aktionen wie das freigeben von Resourcen (Garbage Collector) oder schlicht das trennen einer Datenbankverbindung. Der Finally Block ist jedoch nicht zwingen notwendig und kann ausgelassen werden.</p>
+<p><img src="../exception.gif" alt="Error Handling" title="https://media1.tenor.com/images/0d2bf99cb91370b06ec5c5c577cb44c3/tenor.gif?itemid=14898132"></p>
+<h2 id="04-fehler-aufspüren-beseitigen--programmablauf-kontrollieren">04 Fehler aufspüren, beseitigen &amp; Programmablauf kontrollieren</h2>
+<p><img src="../sherlock.gif" alt="Error Handling" title="https://media3.giphy.com/media/Cxj3KTY05FHQQ/source.gif">
+Mit Hilfe des Visual Studio Debuggers können Breakpoints gesetzt werden, mit deren Hilfe der Programmablauf, sowie die Werte von Variablen und die Parameter von Methoden kontrolliert werden können. Der Debugger ist ein mächtiges Tool um Fehler zu beseitigen und zu finden, er wird daher auch von anderen Programmiertools (z.B. IntelliJ IDEA) für z.B. Java angeboten.</p>
+<p>Die roten Punkte am linken äußeren Rand sind Breakpoints. Durch das Drücken von F5 kann man zum nächsten Breakpoint springen und die Werte von z.B. Variablen prüfen, indem man mit der Maus-Cursor über diesen hovert.</p>
+<p><img src="../Debugger.PNG" alt="Error Handling DEBUGGER" title="Debugger simple Example"></p>
+<p>Für die Variable testNumber in der hervorgehobenen Zeile im Bild wird uns durch das darüber hovern mit der Maus der Wert 21 angezeigt. Dadurch wissen wir, dass das Programm bis zu diese Punkt wie erwartet abläuft.</p>
+<p><img src="../scanning.gif" alt="Error Handling" title="https://media1.tenor.com/images/efdc3eb33b65d314e6fdc2831b126e13/tenor.gif?itemid=5997525"></p>
+<p>Dies ist nur ein kleines Beispiel, dass das generelle Vorgehen beim Debugging zeigen soll und es wird dringend empfohlen sich den Debugger genauer in der Microsoft Documentation anzusehen um mit diesem umgehen zu lernen!</p>
+<h2 id="05-zusatzinfo-zum-unit-testing-in-der-software-industrie">05 Zusatzinfo zum Unit Testing in der Software-Industrie</h2>
+<p>In der Industrie besteht oft die Philosophie Schnittstellen und jede Methode einzeln auf ihre korrekte Funktion zu testen, um für jeden Fall einen reibungslosen Programmablauf zu gewährleisten. Genannt werden diese Tests &ldquo;Unit Tests&rdquo; (hauptsächlich Methoden testing) und Smoke Tests (testen von Grundlegenden Funktionen um zu prüfen ob das System Stabil läuft oder &ldquo;abraucht&rdquo;). Das exzessive Überprüfen des Codes sorgt hierbei für einen erheblichen Mehraufwand in der programmierung (es werden oft gleich viele oder sogar mehr Zeilen Code zur Prüfung verwendet, als für den Code des eigentlichen Projekts benötigt werden).<br>
+<em>In der Spielentwicklung benötigen wir dies i.d.R. nicht, da in unserem Spiel auffällt, wenn ein Ablauf oder sogar eine Grundlegende Mechanik nicht funktioniert.</em></p>
+<p> <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ </p>
+<h4 id="quellen-und-weiterführende-links"><strong>Quellen und weiterführende Links</strong></h4>
+<pre><code>01 https://docs.microsoft.com/de-de/dotnet/visual-basic/programming-guide/language-features/error-types
 
+02 https://www.dotnettricks.com/learn/csharp/a-deep-dive-into-csharp-errors-or-exceptions-handling
+
+03 https://www.dotnettricks.com/learn/csharp/a-deep-dive-into-csharp-errors-or-exceptions-handling
+
+04 https://docs.microsoft.com/de-de/visualstudio/debugger/debugger-feature-tour?view=vs-2019
+https://docs.microsoft.com/de-de/visualstudio/debugger/quickstart-debug-with-managed?view=vs-2019
+https://support.microsoft.com/en-us/help/815788/how-to-trace-and-debug-in-visual-c
+
+05 https://www.c-sharpcorner.com/article/a-basic-introduction-of-unit-test-for-beginners/
+http://softwaretestingfundamentals.com/smoke-testing/
+</code></pre>
   </div>
   
 

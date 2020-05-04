@@ -204,7 +204,7 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
     
     
     <br/>
-    <i class="fas fa-clock"></i> 0 min read
+    <i class="fas fa-clock"></i> 1 min read
 </div>
 
 
@@ -212,14 +212,36 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
   
   
   <div class="post">
-    <h2 id="heading"></h2>
+    <h2 id="01-vektoren--abstandsberechnungen">01 Vektoren &amp; Abstandsberechnungen</h2>
+<p>C# und Monogame bieten vorgefertigte Methoden für Vektorberechnungen an.
+Hier ein Beispiel zur Vektorberechnung (Abstandsberechnung zw. zwei Vektoren).
+Hierbei ist es egal ob es sich um einen Vector3 oder einen Vector2 handelt.
+<img src="../distance.PNG" alt="Vektorberechnungen" title="Längenberechnung"></p>
+<h2 id="02-matritzen">02 Matritzen</h2>
+<p>Matritzenberechnungen dienen dem Transformieren von Vektoren. Da jeder Eckpunkt von z.B. einem 3D-Würfel nichts weiter als eine Vektorkoordinate ist, kann dessen Position, Rotation und Größe durch die entsprechenden Matitzen verändert werden (Transformations-, Rotations- und Skalierungsmatritzen).
+<img src="../MatrixTransform.gif" alt="MatrixTransform" title="Matrix Transform"></p>
+<h2 id="03-quaternion">03 Quaternion</h2>
+<p>Quaternions sind komplexe mathematische Strukturen. Im Grunde kann man sagen, dass sie Rotationen speichern. Um Rotationen zu kombinieren, <strong>müssen</strong> Quaternionen multiplizert werden.
+<img src="../Quaternion.PNG" alt="Quaternion" title="Quaternionen"></p>
+<h2 id="04-quadrieren--wurzel-ziehen">04 Quadrieren &amp; Wurzel ziehen</h2>
+<p><img src="../squareAndSquareRoot.PNG" alt="Square And SquareRoot" title="Square &amp; Square root"></p>
+<h4 id="quellen-und-weiterführende-links"><strong>Quellen und weiterführende Links</strong></h4>
+<pre><code>01 https://docs.microsoft.com/de-de/dotnet/api/system.windows.vector.multiply?view=netframework-4.8
 
+02 https://docs.microsoft.com/de-de/dotnet/api/system.windows.media.matrix.multiply?view=netframework-4.8
+https://docs.microsoft.com/de-de/dotnet/api/system.numerics.matrix3x2?view=netframework-4.8
+https://docs.microsoft.com/de-de/dotnet/api/system.numerics.vector2.distance?view=netframework-4.8
+
+03 https://www.youtube.com/watch?v=3RQmzVGI8tQ
+https://docs.microsoft.com/de-de/dotnet/api/system.numerics.quaternion?view=netframework-4.8
+
+04 </code></pre>
   </div>
   
 
 <div class="navigation navigation-single">
     
-    <a href="/PrgAnd3D/programming/11unity3d_perspektiven-einstellungen/" class="navigation-prev">
+    <a href="/PrgAnd3D/programming/11monogame-perspektiven-einstellungen/" class="navigation-prev">
       <i aria-hidden="true" class="fa fa-chevron-left"></i>
       <span class="navigation-tittle">11. Unity: 
 Perspektiven-Einstellungen View-, World- und Projektionmatrix</span>

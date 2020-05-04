@@ -86,7 +86,9 @@ Wir arbeiten weiter an unserem Monster Beispiel und wenden Polymorphie direkt an
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jackstreicher.github.io/PrgAnd3D/programming/08fehlerbehandlung_und_suche/</guid>
-      <description> </description>
+      <description>01 Fehlerarten Syntaxfehler: Fehhler die beim Schreiben des Codes auftreten und von VS direkt angezeigt werden.
+Laufzeitfehler: Fehler die zur Laufzeit des Programms auftreten, d.h. wenn keine Syntaxfehler vorliegen und die kompilierung erfolgt ist und das Programm ausgeführt wird. Diese Fehler treten z.B. auf, wenn man versucht auf eine Datei zuzugreifen, die nicht existiert.
+Logische Fehler: Diese Fehler treten auf, wärhend das Programm verwendet wird. Hierbei handelt es sich z.B. um Abläufe, die der Entwickler u.</description>
     </item>
     
     <item>
@@ -95,7 +97,10 @@ Wir arbeiten weiter an unserem Monster Beispiel und wenden Polymorphie direkt an
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jackstreicher.github.io/PrgAnd3D/programming/09system_datei_laufwerkzugriffe/</guid>
-      <description> </description>
+      <description>01 Klassen für den Dateizugriff Im Folgenden eine Liste der Klassen für den Dateizugriff
+ System.IO.FileInfo System.IO.DirectoryInfo System.IO.DriveInfo System.IO.Directory System.IO.File  Diese können als Objekt intanziiert werden, damit man Zugriff auf deren Member und Methoden erhält. Über DriveInfo erhält man z.B. Zugriff auf Directory, GetFiles und RootDirectory.
+02 Mit Laufwerken, Ordnern und Dateien arbeiten Hier einige Code Beispiele, mit denen man allgemeine Informationen des Laufwerks ausgeben kann.
+Im folgenden Beispiel versuchen wir den Pfad einer Datei zu verändert und Dateien zu löschen (mit Exception Handling!</description>
     </item>
     
     <item>
@@ -104,27 +109,29 @@ Wir arbeiten weiter an unserem Monster Beispiel und wenden Polymorphie direkt an
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jackstreicher.github.io/PrgAnd3D/programming/10mathematisch_objekte_und_berechnungen/</guid>
-      <description> </description>
+      <description>01 Vektoren &amp;amp; Abstandsberechnungen C# und Monogame bieten vorgefertigte Methoden für Vektorberechnungen an. Hier ein Beispiel zur Vektorberechnung (Abstandsberechnung zw. zwei Vektoren). Hierbei ist es egal ob es sich um einen Vector3 oder einen Vector2 handelt. 02 Matritzen Matritzenberechnungen dienen dem Transformieren von Vektoren. Da jeder Eckpunkt von z.B. einem 3D-Würfel nichts weiter als eine Vektorkoordinate ist, kann dessen Position, Rotation und Größe durch die entsprechenden Matitzen verändert werden (Transformations-, Rotations- und Skalierungsmatritzen).</description>
     </item>
     
     <item>
       <title>11. Unity: 
 Perspektiven-Einstellungen View-, World- und Projektionmatrix</title>
-      <link>https://jackstreicher.github.io/PrgAnd3D/programming/11unity3d_perspektiven-einstellungen/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/programming/11monogame-perspektiven-einstellungen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/11unity3d_perspektiven-einstellungen/</guid>
-      <description> </description>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/11monogame-perspektiven-einstellungen/</guid>
+      <description>01 Field of View (FoV) Live
+02 Clipping plane Live
+Quellen und weiterführende Links 01 http://rbwhitaker.wikidot.com/monogame-basic-matrices https://docs.microsoft.com/de-de/xamarin/graphics-games/monogame/3d/part3 02 https://docs.microsoft.com/de-de/xamarin/graphics-games/monogame/3d/part3 </description>
     </item>
     
     <item>
       <title>12. Unity: 
 Texturierung</title>
-      <link>https://jackstreicher.github.io/PrgAnd3D/programming/12unity3dtexturierung/</link>
+      <link>https://jackstreicher.github.io/PrgAnd3D/programming/12texturierung/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/12unity3dtexturierung/</guid>
-      <description> </description>
+      <guid>https://jackstreicher.github.io/PrgAnd3D/programming/12texturierung/</guid>
+      <description>01 Mipmapping 02 Textur-Manipulationen Quellen und weiterführende Links 01 https://web.archive.org/web/20161101064354/http://www.filmicgames.com/archives/327 https://web.archive.org/web/20150225192602/http://www.arcsynthesis.org/gltut/Texturing/Tut16%20Mipmaps%20and%20Linearity.html 02 https://community.</description>
     </item>
     
   </channel>

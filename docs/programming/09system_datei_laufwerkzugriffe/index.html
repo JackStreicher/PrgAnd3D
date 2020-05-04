@@ -204,7 +204,7 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
     
     
     <br/>
-    <i class="fas fa-clock"></i> 0 min read
+    <i class="fas fa-clock"></i> 2 min read
 </div>
 
 
@@ -212,8 +212,52 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
   
   
   <div class="post">
-    <h2 id="heading"></h2>
+    <h2 id="01-klassen-für-den-dateizugriff">01 Klassen für den Dateizugriff</h2>
+<p>Im Folgenden eine Liste der Klassen für den Dateizugriff</p>
+<ul>
+<li>System.IO.FileInfo</li>
+<li>System.IO.DirectoryInfo</li>
+<li>System.IO.DriveInfo</li>
+<li>System.IO.Directory</li>
+<li>System.IO.File</li>
+</ul>
+<p>Diese können als Objekt intanziiert werden, damit man Zugriff auf deren Member und Methoden erhält.
+Über DriveInfo erhält man z.B. Zugriff auf <em>Directory</em>, <em>GetFiles</em> und <em>RootDirectory</em>.</p>
+<h2 id="02-mit-laufwerken-ordnern-und-dateien-arbeiten">02 Mit Laufwerken, Ordnern und Dateien arbeiten</h2>
+<p>Hier einige Code Beispiele, mit denen man allgemeine Informationen des Laufwerks ausgeben kann.</p>
+<p><img src="../09_MitLaufwerkenUndDateienArbeiten.PNG" alt="KomplexeDatentypen" title="Drive Infos &amp; Change Path"></p>
+<p>Im folgenden Beispiel versuchen wir den Pfad einer Datei zu verändert und Dateien zu löschen (mit Exception Handling!).</p>
+<p><img src="../09_MitLaufwerkenUndDateienArbeiten2.PNG" alt="KomplexeDatentypen" title="Deletions"></p>
+<p>War gar nicht mal so schwer, oder?
+<img src="../easyAsThat.gif" alt="KomplexeDatentypen" title="https://media.giphy.com/media/3o7btNa0RUYa5E7iiQ/giphy.gif"></p>
+<h2 id="03-mit-textdatei-arbeiten">03 Mit Textdatei arbeiten</h2>
+<p>In den folgenen Beispielen wird gezeigt, wie man strings in eine Txt-Datei schreibt. Die benötigte Datei wird hierbei von selbst angelegt, sollte Sie noch nicht exisitieren.
+Zunächst schreiben wir ein Array aus strings in eine .txt Datei.
+<img src="../WriteToTxt.PNG" alt="KomplexeDatentypen" title="Write an Array of Strings"></p>
+<p>Anschließend schreiben wir eine string Variable in eine .txt (wer bis hierhin glaubte, es würde kein Witcher Beispiel verwendet werden lag falsch!).
+<img src="../WriteToTxt2.PNG" alt="KomplexeDatentypen" title="Write a string"></p>
+<p>Wir können auch einzelne strings eines string Arrays ausschließen
+<img src="../WriteToTxt3.PNG" alt="KomplexeDatentypen" title="Write an Array of Strings with exlusions"></p>
+<p>Abschließend wird gezeigt, wie man einen string zu einer bereits bestehenden Txt-Datei hinzufügt.
+<img src="../WriteToTxt4.PNG" alt="KomplexeDatentypen" title="add a strng to an exisiting .txt"></p>
+<p>Abschließend wollen wir den Inhalt einer .txt auslesen und zur prüfung in der Console ausgeben.
+<img src="../ReadTxtFile.PNG" alt="KomplexeDatentypen" title="Read the txt file"></p>
+<p>Als nächstes wird der Inhalt einer .txt in ein string array eingelesen.
+<img src="../ReadTxtFile2.PNG" alt="KomplexeDatentypen" title="Read the txt file"></p>
+<p>Zu guter letzt geben wir den inhalt des zweiten Txt-Files Zeilenweise aus:
+<img src="../ReadTxtFile3.PNG" alt="KomplexeDatentypen" title="Read the txt file"></p>
+<p>Das war unerwartet&hellip;
+<img src="../batmanEating.gif" alt="KomplexeDatentypen" title="https://coubsecure-s.akamaihd.net/get/b107/p/coub/simple/cw_image/cc641dc6970/9b09e962cb4f34804c885/med_1540544315_00032.jpg"></p>
+<p>&hellip;einfach!</p>
+<h4 id="quellen-und-weiterführende-links"><strong>Quellen und weiterführende Links</strong></h4>
+<pre><code>01  https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/file-system/how-to-get-information-about-files-folders-and-drives
 
+02 https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/file-system/how-to-copy-delete-and-move-files-and-folders
+
+03 https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/file-system/how-to-write-to-a-text-file
+https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/file-system/how-to-read-from-a-text-file
+https://docs.microsoft.com/en-gb/dotnet/csharp/programming-guide/file-system/how-to-read-a-text-file-one-line-at-a-time
+</code></pre>
   </div>
   
 
